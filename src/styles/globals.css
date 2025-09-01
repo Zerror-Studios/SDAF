@@ -1,13 +1,35 @@
-
+@font-face {
+  font-family: 'pp_reg';
+  src: url(../../public/fonts/67468cf4115d4cae430d1000_PPNeueMontreal-Regular.woff2);
+}
+@font-face {
+  font-family: 'pp_curvy';
+  src: url(../../public/fonts/67468d1ed015b389e2c000ea_PPPlayground-Light.woff2);
+}
+@font-face {
+  font-family: 'pp_light';
+  src: url(../../public/fonts/67763af0e2a5feb145718b95_PPNeueMontreal-Book.woff2);
+}
+@font-face {
+  font-family: 'ivy_thin';
+  src: url(../../public/fonts/67c7c873ca5be9b253a19c47_LA\ IvyPrestoDisplay-Thin.woff2);
+}
 
 @import "tailwindcss";
 
 body {
   overflow-x: hidden;
   width: 100%;
+  color: white;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 p {
-  font-family: font_regular;
+  font-family: pp_reg;
+}
+h2{
+  font-family:ivy_thin; ;
 }
 .scroller_none::-webkit-scrollbar {
   display: none;
