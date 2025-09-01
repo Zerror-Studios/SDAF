@@ -21,6 +21,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   color: white;
+  background-color:#020202
 }
 body::-webkit-scrollbar{
   display: none;
@@ -29,7 +30,10 @@ p {
   font-family: pp_reg;
 }
 h2{
-  font-family:ivy_thin; ;
+  font-family:ivy_thin; 
+}
+h3{
+  font-family:pp_curvy; 
 }
 .scroller_none::-webkit-scrollbar {
   display: none;

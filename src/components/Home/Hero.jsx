@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import MainBtn from '../buttons/MainBtn'
 gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
@@ -73,17 +74,7 @@ const Hero = () => {
                         </div>
                         <div className="block hero_anim_txt_paren overflow-hidden mt-20">
                             <div className=" hero_anim_txt translate-y-[101%]">
-                                <button className="relative  overflow-hidden group 
-                     text-white border border-white uppercase text-sm px-5 py-2 rounded-full
-                     whitespace-nowrap transition-all duration-500 ease-[cubic-bezier(0.625,0.05,0,1)] 
-                     hover:border-[#c9b46d] hover:text-black">
-                                    <p>Get Updates</p>
-                                    <div className="w-full h-full z-[-1] bg-[#c9b46d] 
-                    absolute top-[100%] left-0 
-                    transition-all duration-500 ease-[cubic-bezier(0.625,0.05,0,1)] 
-                    group-hover:top-0">
-                                    </div>
-                                </button>
+                                <MainBtn txt="Get Updates" />
                             </div>
                         </div>
                     </div>

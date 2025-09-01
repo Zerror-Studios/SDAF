@@ -19,7 +19,7 @@ const Header = () => {
           </p>
         </div>
         <div className="w-[50%] h-full  center ">
-          <img className='w-[20%]' src="/logo/SDAF white.png" alt="" />
+          <img className='w-[18%]' src="/logo/SDAF white.png" alt="" />
         </div>
         <div className="w-[25%] flex justify-end">
           <div className="flex group w-fit items-center gap-1">
@@ -52,7 +52,7 @@ const Header = () => {
             {/* Button */}
             <button className="relative group-hover:text-black overflow-hidden text-xs h-9 px-4 rounded-full border uppercase transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)] group-hover:border-[#c9b46d] border-white">
               <div className="absolute top-[100%] group-hover:top-0 left-0 z-[-1]  h-full w-full bg-[#c9b46d] transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]"></div>
-              <p className='z-[99]'>contact</p>
+              <p className='z-[99] translate-y-0.5'>contact</p>
             </button>
 
             {/* Right circle (shrinks out) */}
