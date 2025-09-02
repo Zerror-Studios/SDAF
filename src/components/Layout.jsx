@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from './common/Header'
 import Footer from './common/Footer'
-import Loader from './common/Loader'
+import IntroLoader from './common/IntroLoader'
 
 const Layout = ({ children }) => {
     return (
         <div>
             <header><Header /></header>
-            <Loader/>
+            {/* <IntroLoader /> */}
             <main>{children}</main>
             {/* <footer><Footer /></footer> */}
         </div>

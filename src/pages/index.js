@@ -1,3 +1,4 @@
+import AboutFoundation from '@/components/Home/AboutFoundation'
 import EnduringSection from '@/components/Home/EnduringSection'
 import Hero from '@/components/Home/Hero'
 import React from 'react'
@@ -7,6 +8,7 @@ const index = () => {
     <div>
         <Hero />
         <EnduringSection/>
+        <AboutFoundation/>
     </div>
   )
 }
