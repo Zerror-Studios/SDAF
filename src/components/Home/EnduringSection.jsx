@@ -9,7 +9,7 @@ const EnduringSection = () => {
 
     useEffect(() => {
 
-        
+
         const makeSplit = (selector) => {
             const split = new SplitType(selector, {
                 types: "lines",
@@ -18,7 +18,7 @@ const EnduringSection = () => {
 
             split.lines.forEach((line) => {
                 const wrapper = document.createElement("div");
-                wrapper.classList.add("block", "overflow-hidden"); 
+                wrapper.classList.add("block", "overflow-hidden");
                 line.parentNode.insertBefore(wrapper, line);
                 wrapper.appendChild(line);
             });
@@ -31,18 +31,18 @@ const EnduringSection = () => {
             makeSplit(".split_para_2"),
         ];
 
-    
+
 
         gsap.fromTo(".split-line", {
             y: "100%"
         }, {
             y: "0%",
-            overflow:"visible",
+            overflow: "visible",
             scrollTrigger: {
                 trigger: ".enduring_desc",
                 start: "top 50%",
                 // markers: true,
-                stagger:0.5,
+                stagger: 0.5,
                 toggleActions: "play none none reverse",
             }
         });
@@ -86,16 +86,16 @@ const EnduringSection = () => {
                         <div
                             style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                             className=" clip_div_1 w-[20vw] h-[100%] ">
-                            <img className='w-full h-full object-cover' src="https://cdn.prod.website-files.com/6734928e2af1829d3c568460/684e5f3dc5d1442665bda691_journey-1.avif" alt="" />
+                        <img className='w-full h-full object-cover' src="/images/enduring/SANGAM_1_KAMAT.webp" alt="" />
                         </div>
                         <h2 className='text-[12vw] translate-y-[-3.5vw] '>Series</h2>
                     </div>
                     <div className="w-full h-[15vw] flex items-center justify-start gap-10">
-                        <h2 className='text-[12vw] translate-y-[-2vw]  inline-block bg-gradient-to-r from-[#c9b46d] to-white bg-clip-text text-transparent '>Enduring</h2>
+                        <h2 className='text-[12vw] translate-y-[-2vw]  inline-block bg-gradient-to-r from-[#EB8529] to-white bg-clip-text text-transparent '>Enduring</h2>
                         <div
                             style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                             className=" clip_div_2 w-[20vw] h-[100%] ">
-                            <img className='w-full h-full object-cover' src="https://cdn.prod.website-files.com/6734928e2af1829d3c568460/684e5f3d04e3c6b6bf6b440b_journey-2.avif" alt="" />
+                            <img className='w-full h-full object-cover' src="/images/enduring/PAKEEZAH_1_KAMAT.webp" alt="" />
                         </div>
 
                     </div>
@@ -103,7 +103,7 @@ const EnduringSection = () => {
                         <div
                             style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                             className=" clip_div_3 w-[20vw] h-[100%] ">
-                            <img className='w-full h-full object-cover' src="https://cdn.prod.website-files.com/6734928e2af1829d3c568460/684e5f3d98b3d031bf3cf6c1_journey-3.avif" alt="" />
+                            <img className='w-full h-full object-cover' src="/images/enduring/TEESRI_MANZIL_1_KAMAT.webp" alt="" />
                         </div>
                         <h2 className='text-[12vw] translate-y-[-1vw] '>Legacies</h2>
                     </div>

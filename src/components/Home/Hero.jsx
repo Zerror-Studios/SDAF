@@ -55,26 +55,26 @@ const Hero = () => {
                     <img className='w-full h-full object-cover' src="/images/clipImage.avif" alt="" />
                     <div className=" text-white absolute w-[50%] h-[70%] text-center  center flex-col">
                         <div className="block hero_anim_txt_paren overflow-hidden">
-                            <p className=' hero_anim_txt whitespace-nowrap uppercase translate-y-[100%] text-[#c9b46d] text-sm mt-10'>Opening Night (By Invitation)</p>
+                            <p className=' hero_anim_txt whitespace-nowrap uppercase translate-y-[100%] text-[#EB8529] text-sm mt-10'>Opening Night (By Invitation)</p>
                         </div>
                         <div className="block hero_anim_txt_paren overflow-hidden">
                             <h2 className='text-3xl hero_anim_txt whitespace-nowrap translate-y-[100%] '> Saturday, 20 Sep 2025 | 6–9 pm</h2>
                         </div>
                         <div className="block hero_anim_txt_paren overflow-hidden">
-                            <p className=' hero_anim_txt whitespace-nowrap uppercase translate-y-[100%] text-[#c9b46d] text-sm mt-10'>Public Viewing (Open to All)</p>
+                            <p className=' hero_anim_txt whitespace-nowrap uppercase translate-y-[100%] text-[#EB8529] text-sm mt-10'>Public Viewing (Open to All)</p>
                         </div>
                         <div className="block hero_anim_txt_paren overflow-hidden">
                             <h2 className='text-3xl hero_anim_txt whitespace-nowrap translate-y-[100%] '> 21–26 Sep 2025 | 11 am–8 pm</h2>
                         </div>
                         <div className="block hero_anim_txt_paren overflow-hidden">
-                            <p className=' hero_anim_txt whitespace-nowrap uppercase translate-y-[100%] text-[#c9b46d] text-sm mt-10'>Venue</p>
+                            <p className=' hero_anim_txt whitespace-nowrap uppercase translate-y-[100%] text-[#EB8529] text-sm mt-10'>Venue</p>
                         </div>
                         <div className="block hero_anim_txt_paren overflow-hidden">
                             <h2 className='text-3xl hero_anim_txt whitespace-nowrap translate-y-[100%] '> Piramal NCPA Gallery, Nariman Point, Mumbai</h2>
                         </div>
                         <div className="block hero_anim_txt_paren overflow-hidden mt-20">
                             <div className=" hero_anim_txt translate-y-[101%]">
-                                <MainBtn txt="Get Updates" />
+                                <MainBtn txt="RSVP" />
                             </div>
                         </div>
                     </div>

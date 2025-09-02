@@ -119,6 +119,13 @@ const IntroLoader = () => {
             duration: 1,
             ease: "art-details"
         })
+        gsap.to(".logo_img", {
+            top: "3.1vw",
+            delay: 1.75,
+            duration: 1,
+            width:"8%",
+            ease: "art-details"
+        })
         gsap.to(".open_right", {
             right: "-50vw",
             delay: 1.75,
@@ -126,7 +133,8 @@ const IntroLoader = () => {
             ease: "art-details",
             onComplete: () => {
                 gsap.set(".loader_wrapper", {
-                    display: "none",
+                    pointerEvents: "none",
+                    // display: "none",
                 })
                 if (window.lenis) {
                     window.lenis.scrollTo(0, 0);
@@ -139,6 +147,11 @@ const IntroLoader = () => {
 
     return (
         <div className="loader_wrapper w-full h-screen fixed z-[9999] top-0 left-0 bg-[#020202]">
+
+                                <img className=" logo_img fixed top-1/2 left-1/2 z-[9999] -translate-y-1/2 -translate-x-1/2 w-[25%]  " src="/logo/SDAF white.png" alt="" />
+
+
+
             <div className="ver_line absolute h-0 z-[99] w-[2px] bg-white left-1/2 -translate-x-1/2"></div>
             <div className=" absolute opacity-0 top-0 left-0 open_left w-[50vw] bg-[#020202]  h-full"></div>
             <div className=" absolute opacity-0 top-0 right-0 open_right w-[50vw] bg-[#020202] h-full"></div>
@@ -151,12 +164,13 @@ const IntroLoader = () => {
 
             {/* Loader text + bar */}
             <div className="loader_txt_box absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-center text-white">
-                <h3 className="text-[4vw] translate-y-[4vw]">Shivdutt Das</h3>
-                <h2 className="uppercase text-[8vw]">Art</h2>
-                <h2 className="uppercase text-[8vw] -translate-y-[5.5vw]">Foundation</h2>
-
+            <div className="w-full center">
+                <img className="w-[50%] opacity-0 " src="/logo/SDAF white.png" alt="" />
+            </div>
+                {/* <h2 className="uppercase text-[8vw]">Shivdutt Das</h2> */}
+                {/* <h3 className="text-[4vw]">Art Foundation</h3> */}
                 {/* Progress bar */}
-                <div className="h-16 relative">
+                <div className="h-16 translate-y-[10vw] relative">
 
                     <div className=" load_div  h-16 flex flex-col items-center justify-between w-full">
                         <div className="w-full center relative overflow-hidden h-[2px]">
@@ -167,7 +181,7 @@ const IntroLoader = () => {
                     </div>
                     <div className="load_btn hidden  opacity-0  h-16  items-center justify-center">
                         <div onClick={completeLoad} className="">
-                            <MainBtn txt="Visit Site" />
+                            <MainBtn txt="Click To Explore" />
                         </div>
                     </div>
                 </div>
