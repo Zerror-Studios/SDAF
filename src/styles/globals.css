@@ -1,18 +1,10 @@
 @font-face {
   font-family: 'pp_reg';
-  src: url(../../public/fonts/67468cf4115d4cae430d1000_PPNeueMontreal-Regular.woff2);
-}
-@font-face {
-  font-family: 'pp_curvy';
-  src: url(../../public/fonts/67468d1ed015b389e2c000ea_PPPlayground-Light.woff2);
-}
-@font-face {
-  font-family: 'pp_light';
-  src: url(../../public/fonts/67763af0e2a5feb145718b95_PPNeueMontreal-Book.woff2);
+  src: url(../../public/fonts/nexa-regular.ttf);
 }
 @font-face {
   font-family: 'ivy_thin';
-  src: url(../../public/fonts/67c7c873ca5be9b253a19c47_LA\ IvyPrestoDisplay-Thin.woff2);
+  src: url(../../public/fonts/SFT-Schrifted-Serif-TRIAL-Display-Light-BF664ebf5e38e21.otf);
 }
 
 @import "tailwindcss";
@@ -24,8 +16,11 @@
 body {
   overflow-x: hidden;
   width: 100%;
-  color: white;
-  background-color:#020202
+  color: #020202;
+  background-image: url(../../public/images/background.avif);
+  /* backdrop-filter: brightness(1.1); */
+  background-size: contain;
+  /* background-color:#020202 */
 }
 body::-webkit-scrollbar{
   display: none;
@@ -38,12 +33,6 @@ h2{
 }
 .ivy_thin{
   font-family:ivy_thin; 
-}
-.pp_light{
-  font-family:pp_light;
-}
-h3{
-  font-family:pp_curvy; 
 }
 .scroller_none::-webkit-scrollbar {
   display: none;

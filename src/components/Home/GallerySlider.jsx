@@ -48,17 +48,17 @@ const GalleryData = [
 const GallerySlider = () => {
     return (
         <div  >
-            <div className="w-full py-[5vw]  relative ">
-                <img className='w-full h-full object-cover brightness-[.3] z-[-1] absolute top-0 left-0' src="https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67aca7c5df93a525b9799963_Abstract%20Cosmic%20Landscape%201.avif" alt="" />
-                <div className="w-full py-[10vw] text-center">
-                    <h2 id='gallery'  className=' text-2xl lg:text-[6vw]'>A Glimpse Into the Archive</h2>
+            <div className="w-full pb-[20vw] lg:pb-0 lg:py-[5vw]  relative ">
+                {/* <img className='w-full h-full object-cover brightness-[.3] z-[-1] absolute top-0 left-0' src="https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67aca7c5df93a525b9799963_Abstract%20Cosmic%20Landscape%201.avif" alt="" /> */}
+                <div className="w-full mb-10 lg:mb-0 py-[10vw] text-center">
+                    <h2 id='gallery'  className=' text-3xl lg:text-7xl'>A Glimpse Into the Archive</h2>
                 </div>
 
                 <div className="w-full flex  ">
                     <Marquee pauseOnClick={true} >
 
                         {GalleryData.map((item, index) => (
-                            <div key={index} className=" px-10 lg:px-20 w-fit h-full">
+                            <div key={index} className=" px-10 lg:px-20 overflow-hidden w-fit h-full">
                                 {index % 2 === 0 ? (
                                     <>
                                         {/* Image top, text below */}
@@ -67,7 +67,7 @@ const GallerySlider = () => {
                                             src={item.img}
                                             alt={item.title}
                                         />
-                                        <div className=" mt-2 lg:mt-5 opacity-80">
+                                        <div className=" mt-2 lg:mt-5 ">
                                             <h2 className="capitalize mb-2 text-xl lg:text-3xl">{item.title}</h2>
                                             <p className="text-sm leading-none pp_light">{item.desc}</p>
                                             <p className="text-sm leading-none pp_light">{item.year}</p>
@@ -76,7 +76,7 @@ const GallerySlider = () => {
                                 ) : (
                                     <>
                                         {/* Text top, image below */}
-                                        <div className=" mb-2 lg:mb-5 opacity-80">
+                                        <div className=" mb-2 lg:mb-5">
                                             <h2 className="capitalize mb-2 text-xl lg:text-3xl">{item.title}</h2>
                                             <p className="text-sm leading-none pp_light">{item.desc}</p>
                                             <p className="text-sm leading-none pp_light">{item.year}</p>

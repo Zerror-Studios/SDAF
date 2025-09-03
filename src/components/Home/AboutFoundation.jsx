@@ -36,40 +36,40 @@ const AboutFoundation = () => {
     }, [])
 
     return (
-        <div>
-            <div className="foundation_parent w-full  bg-[#020202] px-[5.5vw]">
-                <div className="w-full h-full  grid grid-cols-12 gap-x-[2rem] gap-y-[clamp(2.5rem,2.072rem+2.14vw,4rem)]">
+        <div id='about'>
+            <div className="foundation_parent w-full   px-[5.5vw]">
+                <div className="w-full h-full  grid lg:grid-cols-12 gap-x-[2rem] gap-y-[clamp(2.5rem,2.072rem+2.14vw,4rem)]">
 
-                    <div className="col-start-3 col-span-5">
-                        <h2 className='  text-[5vw] leading-none'>The Shivdutt Das Art Foundation</h2>
+                    <div className="lg:col-start-3 col-span-5">
+                        <h2 className=' text-3xl  lg:text-[5vw] leading-none'>The Shivdutt Das Art Foundation</h2>
                     </div>
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                         className="  found_clip_div_1 translate-y-[5vw] row-start-2 col-span-3">
-                        <img src="/images/art foundation/SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT.webp" alt="" />
+                        <img src="/images/art foundation/SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT.webp" alt="SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT" />
                     </div>
 
-                    <div className="  col-start-5 space-y-5 col-span-4">
-                        <h2 className='  uppercase text-[#EB8529] text-xl'>Our Mission</h2>
-                        <p className='  opacity-60 '>To support education, culture, and public access to India's rich creative heritage.</p>
-                        <p className='  opacity-60 '>Shivdutt Das Art Foundation (SDAF) is an arts and cultural initiative by Shivdutt Das MD, Vishwa
+                    <div className="  lg:col-start-5 space-y-5 col-span-4">
+                        <h2 className='  uppercase text-[#EB8529] text-sm lg:text-xl'>Our Mission</h2>
+                        <p className=' text-sm lg:text-base  opacity-60 '>To support education, culture, and public access to India's rich creative heritage.</p>
+                        <p className=' text-sm lg:text-base  opacity-60 '>Shivdutt Das Art Foundation (SDAF) is an arts and cultural initiative by Shivdutt Das MD, Vishwa
                             Samudra Holdings & Director, Shivdutt Das Charity Foundation) that supports education, culture and
                             public access to heritage</p>
-                        <p className='  opacity-60'>SDAF spotlights the artists, artisans, and custodians who have shaped our nation's creative life. Through
+                        <p className=' text-sm lg:text-base  opacity-60'>SDAF spotlights the artists, artisans, and custodians who have shaped our nation's creative life. Through
                             exhibitions, talks, and learning programs, we make their work accessible to all.</p>
                     </div>
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                        className=" found_clip_div_2 translate-y-[-10vw]  col-start-10 col-span-3">
-                        <img src="/images/art foundation/TeesriManzil 3.webp" alt="" />
+                        className=" found_clip_div_2 translate-y-[-10vw]  lg:col-start-10 col-span-3">
+                        <img src="/images/art foundation/TeesriManzil 3.webp" alt="TeesriManzil 3" />
                     </div>
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                        className="  found_clip_div_3 h-[30vw] col-start-6 col-span-5">
-                        <img src="/images/art foundation/SHRI_420_2_KAMAT.webp" alt="" />
+                        className="  found_clip_div_3 h-[30vw] lg:col-start-6 col-span-5">
+                        <img src="/images/art foundation/SHRI_420_2_KAMAT.webp" alt="SHRI_420_2_KAMAT" />
                     </div>
 
                 </div>

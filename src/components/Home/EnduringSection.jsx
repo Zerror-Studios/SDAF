@@ -78,48 +78,46 @@ const EnduringSection = () => {
 
 
     return (
-        <div className='py-[10vw] w-full bg-[#020202]'>
-            <div className=" h-[100vh]  enduring_paren  w-full  text-white center">
-                <div className="w-[70%] h-full  center flex-col">
+        <div className='py-[10vw] px-[5.5vw] lg:px-0 w-full '>
+            <div className=" lg:h-[100vh]  enduring_paren  w-full   center">
+                <div  id='the-series'  className=" w-full lg:w-[70%] h-full  center flex-col">
                     <div className="w-full h-[15vw] flex  justify-between">
-                        <h2 className='text-[12vw] translate-y-[-3.5vw] '>The</h2>
+                        <h2 className=' text-5xl  md:text-[10vw] translate-y-[-3.5vw] '>The </h2>
                         <div
                             style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                            className=" clip_div_1 w-[20vw] h-[100%] ">
-                        <img className='w-full h-full object-cover brightness-75' src="/images/enduring/SANGAM_1_KAMAT.webp" alt="" />
+                            className=" clip_div_1 w-[35vw]  translate-y-[-4vw]  md:w-[20vw] h-[100%] ">
+                        <img className='w-full scale-[.9] lg:scale-[1] h-full object-cover brightness-75' src="/images/enduring/SANGAM_1_KAMAT.webp" alt="SANGAM_1_KAMAT" />
                         </div>
-                        <h2 className='text-[12vw] translate-y-[-3.5vw] '>Series</h2>
+                        <h2 className=' text-5xl   md:text-[10vw] translate-y-[-3.5vw] '>Series</h2>
                     </div>
                     <div className="w-full h-[15vw] flex items-center justify-start gap-10">
-                        <h2 className='text-[12vw] translate-y-[-2vw]  inline-block bg-gradient-to-r from-[#EB8529] to-white bg-clip-text text-transparent '>Enduring</h2>
+                        <h2 className=' text-5xl h-fit pb-3  md:text-[10vw] translate-y-[-2vw]  inline-block bg-gradient-to-r from-[#EB8529] to-[#020202] bg-clip-text text-transparent '>Enduring</h2>
                         <div
                             style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                            className=" clip_div_2 w-[20vw] h-[100%] ">
-                            <img className='w-full h-full object-cover brightness-75' src="/images/enduring/PAKEEZAH_1_KAMAT.webp" alt="" />
+                            className=" clip_div_2 w-[35vw] md:w-[20vw] h-[100%] ">
+                            <img className='w-full h-full object-cover brightness-75' src="/images/enduring/PAKEEZAH_1_KAMAT.webp" alt="PAKEEZAH_1_KAMAT" />
                         </div>
 
                     </div>
                     <div className="w-full h-[15vw] flex items-center justify-end gap-10">
                         <div
                             style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                            className=" clip_div_3 w-[20vw] h-[100%] ">
-                            <img className='w-full h-full object-cover brightness-75' src="/images/enduring/TEESRI_MANZIL_1_KAMAT.webp" alt="" />
+                            className=" clip_div_3 w-[35vw] md:w-[20vw] h-[100%] ">
+                            <img className='w-full h-full object-cover brightness-75' src="/images/enduring/TEESRI_MANZIL_1_KAMAT.webp" alt="TEESRI_MANZIL_1_KAMAT" />
                         </div>
-                        <h2 className='text-[12vw] translate-y-[-1vw] '>Legacies</h2>
+                        <h2 className=' text-5xl  md:text-[10vw] translate-y-[-1vw] '>Legacies</h2>
                     </div>
                 </div>
-
-
             </div>
-            <div className="  enduring_desc  w-full pt-[5vw] text-white  center">
-                <div className="w-[70%]  flex items-center justify-between">
-                    <div className="w-1/2   text-[3.7vw] leading-tight">
+            <div className="  enduring_desc  w-full pt-[20vw] md:pt-[10vw] lg:pt-[5vw]   center">
+                <div className=" w-full lg:w-[70%]  flex flex-col lg:flex-row items-center justify-between">
+                    <div className=" w-full lg:w-1/2  text-3xl  md:text-[3.7vw] leading-tight">
                         <h2 className='split_head_1'>Honouring the  </h2>
                         <h2 className='split_head_2  '>Unsung  Heroes of</h2>
                         <h2 className='split_head_3  '>Indian Culture
                         </h2>
                     </div>
-                    <div className="w-1/2 pl-[10%]  flex flex-col gap-10 opacity-60">
+                    <div className=" w-full lg:w-1/2 text-sm mt-5 lg:pl-[10%]  flex flex-col gap-2 lg:gap-10 opacity-60">
                         <p className='split_para_1   '>Enduring Legacies is a recurring series dedicated to creators who had an outsized impact on India’s
                             cultural landscape, often from behind the scenes.</p>
                         <p className='split_para_2   '>

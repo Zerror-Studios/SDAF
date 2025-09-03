@@ -53,29 +53,29 @@ const Visionaries = () => {
 
     return (
         <div id='vision'>
-            <div className=" vision_paren  w-full  mb-[15vw]  h-screen relative center bg-black ">
+            <div className=" vision_paren  w-full  mb-[15vw]  h-screen relative center  ">
                 <div className=" vision_head block">
-                <h2 className='  text-7xl'>From the Visionaries</h2>
+                <h2 className='  text-3xl lg:text-7xl'>From the Visionaries</h2>
                 </div>
-                <div className="vision_slide_1   flex flex-col items-center gap-5 z-[-1] absolute text-center w-[400px]  left-1/2 -translate-x-1/2">
-                    <img className='w-full aspect-[9/12] object-cover brightness-75' src="/images/visionaries/ON SET PAKEEZAH WITH MEENA KUMARI.webp" alt="" />
+                <div className="vision_slide_1   flex flex-col items-center gap-5 z-[-1] absolute text-center w-[300px] lg:w-[400px]  left-1/2 -translate-x-1/2">
+                    <img className='w-full aspect-[9/12] object-cover brightness-75' src="/images/visionaries/ON SET PAKEEZAH WITH MEENA KUMARI.webp" alt="ON SET PAKEEZAH WITH MEENA KUMARI" />
                     <div className="">
-                    <p className='w-full text-left text-xl leading-none'>“Preservation is only half the job; the other half is public access.”</p>
-                    <h2 className='text-end text-xl '>— Shivdutt Das </h2>
+                    <p className='w-full text-left text-sm lg:text-xl leading-none'>“Preservation is only half the job; the other half is public access.”</p>
+                    <h2 className='text-end text-sm lg:text-xl '>— Shivdutt Das </h2>
                     </div>
                 </div>
-                <div className="vision_slide_2    flex flex-col items-center gap-5 absolute text-center w-[400px]  left-1/2 -translate-x-1/2">
-                    <img className='w-full aspect-[9/12] object-cover brightness-75 grayscale-100' src="/images/visionaries/Parvez Damania.webp" alt="" />
+                <div className="vision_slide_2    flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[400px]  left-1/2 -translate-x-1/2">
+                    <img className='w-full aspect-[9/12] object-cover brightness-75 grayscale-100' src="/images/visionaries/Parvez Damania.webp" alt="Parvez Damania" />
                     <div className="">
-                    <p className='w-full text-left text-xl leading-none'>“Archives aren’t nostalgia—they’re raw material for new imagination.”</p>
-                    <h2 className='text-end text-xl '>— Parvez Damania</h2>
+                    <p className='w-full text-left text-sm lg:text-xl leading-none'>“Archives aren’t nostalgia—they’re raw material for new imagination.”</p>
+                    <h2 className='text-end text-sm lg:text-xl '>— Parvez Damania</h2>
                     </div>
                 </div>
-                <div className="vision_slide_3    flex flex-col items-center gap-5 absolute text-center w-[400px]  left-1/2 -translate-x-1/2">
-                    <img className='w-full aspect-[9/12] object-cover brightness-75' src="/images/visionaries/SHRI_420_3_KAMAT.webp" alt="" />
+                <div className="vision_slide_3    flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[400px]  left-1/2 -translate-x-1/2">
+                    <img className='w-full aspect-[9/12] object-cover brightness-75' src="/images/visionaries/SHRI_420_3_KAMAT.webp" alt="SHRI_420_3_KAMAT" />
                     <div className="">
-                    <p className='w-full text-left text-xl leading-none'>“From studio file to museum wall—every still is light, craft, and history.”</p>
-                    <h2 className='text-end text-xl '>— Neha Kamat</h2>
+                    <p className='w-full text-left text-sm lg:text-xl leading-none'>“From studio file to museum wall—every still is light, craft, and history.”</p>
+                    <h2 className='text-end text-sm lg:text-xl '>— Neha Kamat</h2>
                     </div>
                 </div>
             </div>
