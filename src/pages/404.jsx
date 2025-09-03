@@ -1,4 +1,5 @@
 import React from "react";
+import SeoHeader from "@/components/seo/SeoHeader";
 
 const Custom404 = ({ meta }) => {
   return (
