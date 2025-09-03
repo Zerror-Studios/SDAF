@@ -36,11 +36,11 @@ const ContactForm = () => {
 
     return (
         <div id='contact'>
-            <div className="w-full h-screen my-[5vw] flex   px-[5.5vw]  ">
-                <div className="w-1/2 h-full center">
+            <div className="w-full lg:h-screen my-[5vw] flex flex-col lg:flex-row   px-[5.5vw]  ">
+                <div className=" w-full lg:w-1/2 h-full center">
                     <div className="">
-                        <h2 className='text-5xl'>Stay Connected</h2>
-                        <p className=' leading-none pp_light mt-3 opacity-60 '>Public viewing days are open to all. RSVP if you'd like event reminders and exclusive invitations to future
+                        <h2 className=' text-2xl lg:text-5xl'>Stay Connected</h2>
+                        <p className=' text-sm lg:text-base leading-none  mt-3 pp_light opacity-60 '>Public viewing days are open to all. RSVP if you'd like event reminders and exclusive invitations to future
                             Enduring Legacies exhibitions.</p>
                         <div className="w-full">
                             <form action="" className='w-full '>
@@ -128,7 +128,7 @@ const ContactForm = () => {
                                     </div>
 
                                     {/* Preferred channel (radio) */}
-                                    <h2 className="text-xl mt-6">Preferred Channel:</h2>
+                                    <h2 className="text-xl mt-6">Preferred Channel</h2>
                                     <div className="flex flex-wrap gap-6 mt-3 opacity-80">
                                         {["Email", "WhatsApp", "Both"].map((opt) => (
                                             <label
@@ -182,8 +182,8 @@ const ContactForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 h-full flex flex-col justify-center pl-20">
-                    <div className="w-full h-[55%] opacity-80  mt-6">
+                <div className=" mt-10 lg:mt-0 w-full lg:w-1/2 h-full flex flex-col-reverse lg:flex-col justify-center lg:pl-20">
+                    <div className="w-full h-[50vh] lg:h-[55%] opacity-80  mt-6">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.1368620643657!2d72.8173092752016!3d18.925335282248497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d12123ed5519%3A0xcc78e92c4db0967e!2sNational%20Centre%20for%20Performing%20Arts%20(NCPA)%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1756878016879!5m2!1sen!2sin"
                             width="100%"
@@ -193,9 +193,10 @@ const ContactForm = () => {
                             referrerPolicy="no-referrer-when-downgrade"
                             className=" border"
                         ></iframe>
-                    </div>                    <div className=" mt-5">
+                    </div>
+                    <div className=" mt-5">
                         <h2 className='text-2xl'>Find Your Way to the Exhibition</h2>
-                        <p className=' mt-3 pp_light opacity-60'>
+                        <p className=' text-sm lg:text-base leading-none  mt-3 pp_light opacity-60'>
                             Piramal NCPA Gallery National Centre for the Performing Arts, Nariman Point, Mumbai, Maharashtra
                             400021
                         </p>

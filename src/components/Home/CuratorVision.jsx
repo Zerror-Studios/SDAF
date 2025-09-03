@@ -24,7 +24,7 @@ const CuratorVision = () => {
         <div>
             <div className=" curat_paren w-full center flex-col">
                 <h2 className='text-7xl'>The Curator's Vision</h2>
-                    <img className='  mt-5 z-[-1] w-[25vw]' src="/images/exhibition/JIS_DESH_MEIN_GANGA_BEHTI_HAI_1_KAMAT.webp" alt="" />
+                    <img className='  mt-5 z-[-1] aspect-[9/12] w-[25vw] object-cover' src="/images/exhibition/parveez damania.webp" alt="" />
 
                     <p className='mt-5 w-[25vw] leading-none '>" Curated by Parvez Damania, the selection traces working methods, star-making imagery,
                         and behind-the-scenes craft—pairing iconic frames with short captions that decode light,

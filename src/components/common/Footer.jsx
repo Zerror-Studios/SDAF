@@ -6,7 +6,7 @@ const Footer = () => {
       <div className=" w-full  px-[5.5vw]">
         <div className="w-full h-[30vh] flex">
           <div className="w-1/2 h-full flex items-center">
-            <img className='h-[50%]' src="/logo/SDAF white.png" alt="" />
+            <img className=' h-[30%] lg:h-[50%]' src="/logo/SDAF white.png" alt="" />
           </div>
 
           <div className="w-1/2 h-full uppercase flex flex-col justify-center items-end">
@@ -19,6 +19,12 @@ const Footer = () => {
             <h2 className='block group overflow-hidden relative cursor-pointer hover:opacity-60 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]'>
               <a href="#about">
                 about
+              </a>
+              <span className="w-full h-[1px] bg-white absolute bottom-0.5 left-[-100%] group-hover:left-0 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)] rounded-full"></span>
+            </h2>
+            <h2 className='block group overflow-hidden relative cursor-pointer hover:opacity-60 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]'>
+              <a href="#vision">
+                vision
               </a>
               <span className="w-full h-[1px] bg-white absolute bottom-0.5 left-[-100%] group-hover:left-0 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)] rounded-full"></span>
             </h2>

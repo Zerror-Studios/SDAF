@@ -14,7 +14,6 @@ const index = () => {
   return (
     <div>
         <Hero />
-
         <EnduringSection/>
         <Exhibition/>
         <ManBehind/>

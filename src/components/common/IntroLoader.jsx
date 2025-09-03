@@ -119,13 +119,22 @@ const IntroLoader = () => {
             duration: 1,
             ease: "art-details"
         })
-        gsap.to(".logo_img", {
-            top: "3.1vw",
-            delay: 1.75,
-            duration: 1,
-            width:"8%",
-            ease: "art-details"
-        })
+        if(window.innerWidth>768){
+            gsap.to(".logo_img", {
+                top: "3.1vw",
+                delay: 1.75,
+                duration: 1,
+                width: "8%",
+                ease: "art-details"
+            })
+        }else{
+            gsap.to(".logo_img", {
+                opacity:0,
+                delay: .5,
+                duration: 1,
+                ease: "art-details"
+            })
+        }
         gsap.to(".open_right", {
             right: "-50vw",
             delay: 1.75,
@@ -148,7 +157,7 @@ const IntroLoader = () => {
     return (
         <div className="loader_wrapper w-full h-screen fixed z-[9999] top-0 left-0 bg-[#020202]">
 
-                                <img className=" logo_img fixed top-1/2 left-1/2 z-[9999] -translate-y-1/2 -translate-x-1/2 w-[25%]  " src="/logo/SDAF white.png" alt="" />
+            <img className=" logo_img fixed top-1/2 left-1/2 z-[9999] -translate-y-1/2 -translate-x-1/2 w-[60%] md:w-[25%]  " src="/logo/SDAF white.png" alt="" />
 
 
 
@@ -164,13 +173,13 @@ const IntroLoader = () => {
 
             {/* Loader text + bar */}
             <div className="loader_txt_box absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-center text-white">
-            <div className="w-full center">
-                <img className="w-[50%] opacity-0 " src="/logo/SDAF white.png" alt="" />
-            </div>
+                <div className="w-full center">
+                    <img className="w-[50%] opacity-0 " src="/logo/SDAF white.png" alt="" />
+                </div>
                 {/* <h2 className="uppercase text-[8vw]">Shivdutt Das</h2> */}
                 {/* <h3 className="text-[4vw]">Art Foundation</h3> */}
                 {/* Progress bar */}
-                <div className="h-16 translate-y-[10vw] relative">
+                <div className="h-16 translate-y-[40vw] md:translate-y-[20vw] lg:translate-y-[10vw] relative">
 
                     <div className=" load_div  h-16 flex flex-col items-center justify-between w-full">
                         <div className="w-full center relative overflow-hidden h-[2px]">

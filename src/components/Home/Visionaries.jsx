@@ -52,7 +52,7 @@ const Visionaries = () => {
 
 
     return (
-        <div id='about'>
+        <div id='vision'>
             <div className=" vision_paren  w-full  mb-[15vw]  h-screen relative center bg-black ">
                 <div className=" vision_head block">
                 <h2 className='  text-7xl'>From the Visionaries</h2>
@@ -65,7 +65,7 @@ const Visionaries = () => {
                     </div>
                 </div>
                 <div className="vision_slide_2    flex flex-col items-center gap-5 absolute text-center w-[400px]  left-1/2 -translate-x-1/2">
-                    <img className='w-full aspect-[9/12] object-cover brightness-75 grayscale-100' src="/images/visionaries/Shataranj Ke Khiladi025.webp" alt="" />
+                    <img className='w-full aspect-[9/12] object-cover brightness-75 grayscale-100' src="/images/visionaries/Parvez Damania.webp" alt="" />
                     <div className="">
                     <p className='w-full text-left text-xl leading-none'>“Archives aren’t nostalgia—they’re raw material for new imagination.”</p>
                     <h2 className='text-end text-xl '>— Parvez Damania</h2>
