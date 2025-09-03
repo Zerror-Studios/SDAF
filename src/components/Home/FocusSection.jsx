@@ -8,7 +8,7 @@ import SplitType from "split-type";
 const images = [
   "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f136a37bc1164cd76f4_gallery_img_8-p-500.avif",
   "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13278e574b066891ea_gallery_img_1.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13c4e22ba69018d375_gallery_img_6.avif",
+  "https://cdn.prod.website-files.com/67862174a33a316e969b0659/678769a2ebfab8e3dfcc3ae6_main-img.avif",
   "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13c4e22ba69018d375_gallery_img_6.avif",
   "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f1314bd8e627442e371_gallery_img_2.avif",
   "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13b230be8a984914a2_gallery_img_5-p-500.avif",
@@ -161,7 +161,7 @@ const FocusSection = () => {
 
 
   return (
-    <div>
+    <div id='focus'>
       <div className="focus_parent w-full h-[120vh]  text-center center flex-col ">
         <p className='text-xl translate-y-[-5vw] text-[#EB8529] '>OUR FOCUS</p>
         <div className="w-full  translate-y-[-2vw] relative ">
@@ -181,9 +181,9 @@ const FocusSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-[5.5vw] gap-4 grid perspective-[1312px] grid-cols-4 absolute z-[-1]">
+        <div className="w-full px-[5.5vw]  grid  perspective-[1312px] grid-cols-4 absolute z-[-1]">
           {images.map((img, index) => (
-            <div className="trans_div aspect-square transform-3d w-full ">
+            <div className="trans_div rounded-3xl overflow-hidden aspect-square transform-3d w-full ">
               <img className='w-full h-full object-cover' src={img} alt="" />
             </div>
           ))}

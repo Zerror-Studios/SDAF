@@ -7,32 +7,33 @@ import SplitType from "split-type";
 const ManBehind = () => {
 
     useEffect(() => {
+        const makeSplit = (selector) => {
+            const split = new SplitType(selector, {
+                types: "lines",
+                lineClass: "man_split-line",
+            });
 
-    
+            split.lines.forEach((line) => {
+                const wrapper = document.createElement("div");
+                wrapper.classList.add("block", "overflow-hidden");
+                line.parentNode.insertBefore(wrapper, line);
+                wrapper.appendChild(line);
+            });
+        }
+        makeSplit(".kamot_last_sec h2"),
 
-
-        var tl2 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".curat_paren",
-                start: "top top",
-                end: "+=2500",
-                scrub: true,
-                pin: true,
-                // markers: true
-            }
-        })
-        tl2.to(".curat_head", {
-            scale: 0.9,
-            opacity: 0,
-        })
-        tl2.from(".curat_para_1", {
-            scale: 0.9,
-            opacity: 0,
-        })
-
-
+            gsap.fromTo(".man_split-line", {
+                y: 100,
+            }, {
+                y: 0,
+                scrollTrigger: {
+                    trigger: ".kamot_last_sec",
+                    start: "top 60%",
+                    // markers: true,
+                    toggleActions: "play none none reverse",
+                }
+            })
     }, [])
-
 
 
     return (
@@ -57,7 +58,7 @@ const ManBehind = () => {
                     </div>
                     <p className='w-[25%] h-[40vh] ml-[5%] text-2xl'>His work was essential for directors, producers, and actors alike.</p>
                 </div>
-                <div className="w-full center  h-[50vh] mb-[10vw] text-center   ">
+                <div className=" kamot_last_sec w-full center  h-[20vw] mb-[10vw] text-center   ">
                     <h2 className='text-4xl w-[60%]'>After his untimely passing at 44, his colleagues and later his son Vidyadhar, and now grandchildren Neha
                         and Abhishek, preserved and expanded an archive that today exceeds 300,000 negatives. Timeless
                         Frames brings these invaluable studio files to the museum wall for the first time.</h2>

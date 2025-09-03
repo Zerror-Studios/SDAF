@@ -46,7 +46,7 @@ const AboutFoundation = () => {
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                        className=" found_clip_div_1 translate-y-[5vw] row-start-2 col-span-3">
+                        className="  found_clip_div_1 translate-y-[5vw] row-start-2 col-span-3">
                         <img src="/images/art foundation/SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT.webp" alt="" />
                     </div>
 
@@ -62,13 +62,13 @@ const AboutFoundation = () => {
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                        className="found_clip_div_2 translate-y-[-10vw]  col-start-10 col-span-3">
+                        className=" found_clip_div_2 translate-y-[-10vw]  col-start-10 col-span-3">
                         <img src="/images/art foundation/TeesriManzil 3.webp" alt="" />
                     </div>
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                        className=" found_clip_div_3 h-[30vw] col-start-6 col-span-5">
+                        className="  found_clip_div_3 h-[30vw] col-start-6 col-span-5">
                         <img src="/images/art foundation/SHRI_420_2_KAMAT.webp" alt="" />
                     </div>
 

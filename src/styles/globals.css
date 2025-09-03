@@ -17,6 +17,10 @@
 
 @import "tailwindcss";
 
+*{
+  scroll-behavior: smooth ;
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -31,6 +35,12 @@ p {
 }
 h2{
   font-family:ivy_thin; 
+}
+.ivy_thin{
+  font-family:ivy_thin; 
+}
+.pp_light{
+  font-family:pp_light;
 }
 h3{
   font-family:pp_curvy; 
