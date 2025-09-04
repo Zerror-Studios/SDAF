@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   color: #020202;
-  background-image: url(../../public/images/background.avif);
+  background-image: url(../../public/images/paperboard-texture_compress.webp);
   /* backdrop-filter: brightness(1.1); */
   background-size: contain;
   /* background-color:#020202 */

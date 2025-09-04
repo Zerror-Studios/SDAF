@@ -57,7 +57,7 @@ const Header = () => {
 
       <div
         // style={{clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"}}
-        className=" open_menu right-[-100%] w-full h-[100dvh] bg-[#B5AA9A] text-[#020202] p-5 fixed z-[99999]">
+        className=" open_menu right-[-100%] w-full h-[100dvh] bg-[#ECE7D9] text-[#020202] p-5 fixed z-[99999]">
         <div className=" absolute  right-5 w-full flex justify-end">
           <RiCloseLine size={30} onClick={closeMenu} />
         </div>
@@ -73,7 +73,7 @@ const Header = () => {
             </a>
           ))}
           <a
-              onClick={closeMenu}
+            onClick={closeMenu}
             href="https://maps.app.goo.gl/fLQy21BRnGkxEJpb6"
             target="_blank"
             rel="noopener noreferrer"
@@ -84,8 +84,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className=" nav w-full h-16  fixed top-0 left-0 z-[999]  px-[5.5vw] flex items-center justify-between">
-        <div className=" hidden lg:flex w-[25%]  uppercase text-xs items-center h-full gap-5">
+      <div className=" nav w-full h-16  fixed top-0 left-0 z-[999]  px-[4vw] flex items-center justify-between">
+        <div className=" hidden lg:flex whitespace-nowrap  uppercase text-sm items-center h-full gap-5">
           {navLinks.map((link, i) => (
             <p
               key={i}
@@ -96,8 +96,10 @@ const Header = () => {
             </p>
           ))}
         </div>
-        <div className="w-[50%] h-full flex items-center ">
+        <div className="w-[50%]  h-full flex items-center ">
+          <a href="#hero">
           <img className=' w-[50%] md:w-[25%] lg:opacity-0 translate-y-[1vw]' src="/logo/SDAF black.png" alt="logo_black" />
+          </a>
         </div>
         <div className=" lg:w-[25%] gap-2 flex items-center justify-end h-full ">
           <div className="flex items-center gap-2">
@@ -109,8 +111,8 @@ const Header = () => {
           <a href="https://maps.app.goo.gl/fLQy21BRnGkxEJpb6"
             target="_blank"
             rel="noopener noreferrer"
-            className=' hidden lg:block  w-[12%]'>
-            <img className='w-full opacity-90 ' src="/images/DropLocation.png" alt="Drop Location" />
+            className=' hidden lg:block  w-[10%]'>
+            <img className='   w-full' src="/images/location_icon2.png" alt="Drop Location" />
           </a>
         </div>
       </div>

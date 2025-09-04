@@ -76,7 +76,7 @@ const Hero = () => {
                 <div className=" pointer-events-none absolute z-[9] top-1/2 h-screen -translate-y-1/2  left-1/2 -translate-x-1/2  text-center   flex flex-col justify-between">
                 <h1 className='opacity-0 text-xs absolute pointer-events-none'>Enduring Legacies Timeless Frames</h1>
                     <h2 className=' hero_head_1 text-[11vw] translate-y-10 whitespace-nowrap'>Enduring Legacies</h2>
-                    <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[10%] text-left lg:w-[300px] '>A photographic journey through Indian cinema from the Kamat
+                    <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[5%] text-lg text-left lg:w-[350px] '>A photographic journey through Indian cinema from the Kamat
                         Foto Studio Archive. A tribute to the pioneering photographer,
                         Damodar Kamat.
                     </p>
@@ -92,7 +92,7 @@ const Hero = () => {
                         </div>
                         <div className="w-full lg:w-1/2 h-full center">
                             <div className="">
-                                <h2 className=' hero_split_txt hero text-3xl lg:text-5xl'>Programme & Schedule</h2>
+                                <h2 className=' hero_split_txt hero  leading-14 text-3xl lg:text-5xl'>Programme & Schedule</h2>
                                 <p className='  hero_split_txt lg:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Opening Night (By Invitation)</p>
 
                                 <h2 className='   lg:text-2xl  hero_split_txt lg:whitespace-nowrap '> Saturday, 20 Sep 2025 | 6 pm – 9 pm</h2>

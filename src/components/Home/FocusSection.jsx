@@ -162,7 +162,7 @@ const FocusSection = () => {
 
   return (
     <div id='focus'>
-      <div className="focus_parent w-full h-[120vh] overflow-x-hidden  text-center center flex-col ">
+      <div className="focus_parent w-full h-[120vh] overflow-hidden  text-center center flex-col ">
         <p className=' text-sm lg:text-xl translate-y-[-5vw] text-[#EB8529] '>OUR FOCUS</p>
         <div className="w-full  translate-y-[-2vw] relative ">
           <div className=" w-full flex h-fit items-center justify-center">
@@ -175,13 +175,13 @@ const FocusSection = () => {
           <div className=" w-full items-center justify-center">
 
             <div className=" block h-[25px]  relative leading-xl">
-              <p className=' cube_txt_1  text-sm w-full  lg:text-xl   perspective-[1000px] transform-3d'>We work with families and archives to protect vital cultural material.</p>
-              <p className=' cube_txt_2 left-1/2 w-full -translate-x-1/2 rotate-x-[-90deg] perspective-[1000px] transform-3d absolute top-0   text-sm lg:text-xl'>We provide museum-grade care and contemporary storytelling to illuminate the work.</p>
-              <p className=' cube_txt_3 left-1/2 w-full  -translate-x-1/2 rotate-x-[-90deg] perspective-[1000px] transform-3d absolute top-0   text-sm lg:text-xl'>We bring these important stories into the public eye for discovery and dialogue.</p>
+              <p className=' cube_txt_1  text-sm w-full  lg:text-2xl   perspective-[1000px] transform-3d'>We work with families and archives to protect vital cultural material.</p>
+              <p className=' cube_txt_2 left-1/2 w-full -translate-x-1/2 rotate-x-[-90deg] perspective-[1000px] transform-3d absolute top-0   text-sm lg:text-2xl'>We provide museum-grade care and contemporary storytelling to illuminate the work.</p>
+              <p className=' cube_txt_3 left-1/2 w-full  -translate-x-1/2 rotate-x-[-90deg] perspective-[1000px] transform-3d absolute top-0   text-sm lg:text-2xl'>We bring these important stories into the public eye for discovery and dialogue.</p>
             </div>
           </div>
         </div>
-        <div className="w-full px-[5.5vw]  grid  gap-2 lg:gap-4 perspective-[1312px] grid-cols-3 md:grid-cols-4 absolute z-[-1]">
+        <div className="w-full px-[4vw]  grid  gap-2 lg:gap-4 perspective-[1312px] grid-cols-3 md:grid-cols-4 absolute z-[-1]">
           {images.map((img, index) => (
             <div key={index} className="trans_div  overflow-hidden aspect-square transform-3d w-full ">
               <img className='w-full h-full object-cover' src={img} alt={`Image ${index + 1}`} />

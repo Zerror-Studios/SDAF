@@ -63,14 +63,14 @@ const GallerySlider = () => {
                                     <>
                                         {/* Image top, text below */}
                                         <img
-                                            className=" w-[160px] h-[180px] lg:w-[230px] lg:h-[250px] aspect-square object-cover"
+                                            className=" w-[160px] h-[180px] lg:w-[280px] lg:h-[300px] aspect-square object-cover"
                                             src={item.img}
                                             alt={item.title}
                                         />
                                         <div className=" mt-2 lg:mt-5 ">
                                             <h2 className="capitalize mb-2 text-xl lg:text-3xl">{item.title}</h2>
-                                            <p className="text-sm leading-none pp_light">{item.desc}</p>
-                                            <p className="text-sm leading-none pp_light">{item.year}</p>
+                                            <p className=" text-sm lg:text-base leading-none pp_light">{item.desc}</p>
+                                            <p className=" text-sm lg:text-base leading-none pp_light">{item.year}</p>
                                         </div>
                                     </>
                                 ) : (
@@ -78,11 +78,11 @@ const GallerySlider = () => {
                                         {/* Text top, image below */}
                                         <div className=" mb-2 lg:mb-5">
                                             <h2 className="capitalize mb-2 text-xl lg:text-3xl">{item.title}</h2>
-                                            <p className="text-sm leading-none pp_light">{item.desc}</p>
-                                            <p className="text-sm leading-none pp_light">{item.year}</p>
+                                            <p className=" text-sm lg:text-base leading-none pp_light">{item.desc}</p>
+                                            <p className=" text-sm lg:text-base leading-none pp_light">{item.year}</p>
                                         </div>
                                         <img
-                                            className="w-[160px] h-[180px] lg:w-[230px] lg:h-[250px] aspect-square object-cover"
+                                            className="w-[160px] h-[180px] lg:w-[280px] lg:h-[300px] aspect-square object-cover"
                                             src={item.img}
                                             alt={item.title}
                                         />
