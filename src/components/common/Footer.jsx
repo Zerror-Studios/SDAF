@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className=" w-full  px-[4vw]">
+      <div className=" w-full  px-[4vw]  ">
         <div className="w-full h-[30vh] flex">
           <div className="w-1/2 h-full flex items-center">
             <img className=' h-[30%] lg:h-[50%]' src="/logo/SDAF black.png" alt="logo_black" />

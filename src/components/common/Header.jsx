@@ -57,7 +57,7 @@ const Header = () => {
 
       <div
         // style={{clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"}}
-        className=" open_menu right-[-100%] w-full h-[100dvh] bg-[#ECE7D9] text-[#020202] p-5 fixed z-[99999]">
+        className=" open_menu   right-[-100%] w-full h-[100dvh] bg-[#ECE7D9] text-[#020202] p-5 fixed z-[99999]">
         <div className=" absolute  right-5 w-full flex justify-end">
           <RiCloseLine size={30} onClick={closeMenu} />
         </div>
@@ -84,7 +84,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className=" nav w-full h-16   lg:fixed top-0 left-0 z-[999]  px-[4vw] flex items-center justify-between">
+      <div className=" nav w-full h-16  absolute    lg:fixed top-0 left-0 z-[999]  px-[4vw] flex items-center justify-between">
         <div className=" hidden lg:flex whitespace-nowrap  uppercase text-sm items-center h-full gap-5">
           {navLinks.map((link, i) => (
             <p

@@ -104,7 +104,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: "rohit@wearepointof.com",
-      to: ["bestscenebs01@gmail.com"],
+      to: ["gautam.karande@vishwasamudra.in"],
       subject: "New Form Submission for SDAF",
       html: `
         <html>

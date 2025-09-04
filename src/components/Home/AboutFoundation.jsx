@@ -37,7 +37,7 @@ const AboutFoundation = () => {
 
     return (
         <div id='about' className=' pt-[5vw]'>
-            <div className="foundation_parent w-full   px-[4vw]">
+            <div className="foundation_parent w-full     px-[4vw]">
                 <div className="w-full h-full  grid lg:grid-cols-12 gap-x-[2rem] gap-y-[clamp(2.5rem,2.072rem+2.14vw,4rem)]">
 
                     <div className="lg:col-start-3 col-span-5">
@@ -62,7 +62,7 @@ const AboutFoundation = () => {
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
-                        className=" found_clip_div_2 translate-y-[-10vw]  lg:col-start-10 col-span-3">
+                        className=" found_clip_div_2 lg:translate-y-[-10vw]  lg:col-start-10 col-span-3">
                         <img src="/images/art foundation/TeesriManzil 3.webp" alt="TeesriManzil 3" />
                     </div>
 

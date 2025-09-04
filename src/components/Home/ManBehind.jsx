@@ -41,7 +41,7 @@ const ManBehind = () => {
 
     return (
         <div>
-            <div className=" kamot_paren pt-[10vw]  w-full ">
+            <div className=" kamot_paren   pt-[10vw]  w-full ">
                 <div className="w-full h-[30vh] center flex-col">
                     <div className="block">
                         <p className=' text-sm lg:text-xl text-[#EB8529]'>The Man Behind the Lens</p>
@@ -49,8 +49,8 @@ const ManBehind = () => {
                     </div>
                 </div>
                 <div className=" big_img sticky mb-[10vw] z-[-1] top-1/2 -translate-y-1/2  w-full center flex-col">
-                    <img className=' w-[80vw]  md:w-[25vw]' src="/images/exhibition/DAMODAR_KAMAT.webp" alt="damodar kamat" />
-                    <p className=' w-[80vw] text-sm lg:text-lg lg:w-[25vw] mt-5 leading-none'>A proud Maharashtrian and a perfectionist, Damodar Kamat founded Kamat Foto Flash in 1945 at
+                    <img className=' w-[80vw]  md:w-[32vw] lg:w-[25vw]' src="/images/exhibition/DAMODAR_KAMAT.webp" alt="damodar kamat" />
+                    <p className=' w-[80vw] text-sm lg:text-lg md:w-[32vw] lg:w-[25vw] mt-5 leading-none'>A proud Maharashtrian and a perfectionist, Damodar Kamat founded Kamat Foto Flash in 1945 at
                         Famous Studios, Mahalaxmi. He was a master of his craft, known for his quiet precision and technical
                         genius.</p>
                 </div>
