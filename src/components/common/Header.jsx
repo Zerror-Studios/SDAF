@@ -98,7 +98,7 @@ const Header = () => {
         </div>
         <div className="w-[50%]  h-full flex items-center ">
           <a href="#hero">
-          <img className=' w-[50%] md:w-[25%] lg:opacity-0 translate-y-[1vw]' src="/logo/SDAF black.png" alt="logo_black" />
+            <img className=' w-[50%] md:w-[25%] lg:opacity-0 translate-y-[1vw]' src="/logo/SDAF black.png" alt="logo_black" />
           </a>
         </div>
         <div className=" lg:w-[25%] gap-2 flex items-center justify-end h-full ">
@@ -112,7 +112,12 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             className=' hidden lg:block  w-[10%]'>
-            <img className='   w-full' src="/images/location_icon2.png" alt="Drop Location" />
+
+            <img
+              className="hover-orange transition-all duration-200 w-full"
+              src="/images/location_icon2.png"
+              alt="Drop Location"
+            />
           </a>
         </div>
       </div>

@@ -29,6 +29,12 @@ body {
 body::-webkit-scrollbar{
   display: none;
 }
+
+.hover-orange:hover {
+  filter: brightness(0) saturate(100%) invert(43%) sepia(100%) saturate(748%) hue-rotate(360deg) brightness(100%) contrast(101%);
+}
+
+
 p {
   font-family: pp_reg;
 }
