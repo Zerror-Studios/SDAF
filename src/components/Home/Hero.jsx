@@ -67,13 +67,13 @@ const Hero = () => {
 
     return (
         <div id='hero'>
-            <div className=" hero_paren w-full h-screen relative">
-                <p className=' absolute bottom-[18%] text-xs lg:hidden hero_para_1 ml-[10%] text-left w-[300px] '>A photographic journey through Indian cinema from the Kamat
+            <div className=" hero_paren bg_img w-full h-screen relative">
+                <p className=' absolute bottom-[24%] text-xs lg:hidden hero_para_1 ml-[10%] text-left w-[300px] '>A photographic journey through Indian cinema from the Kamat
                         Foto Studio Archive. A tribute to the pioneering photographer,
                         Damodar Kamat.
                     </p>
                 {/* <img className='w-full pointer-events-none h-full object-cover brightness-75' src="/images/hero_bg.avif" alt="" /> */}
-                <div className=" pointer-events-none absolute z-[9] top-1/2 h-screen -translate-y-1/2  left-1/2 -translate-x-1/2  text-center   flex flex-col justify-between">
+                <div className=" pointer-events-none absolute z-[9] top-[46%] lg:top-1/2 h-screen -translate-y-1/2  left-1/2 -translate-x-1/2  text-center   flex flex-col justify-between">
                 <h1 className='opacity-0 text-xs absolute pointer-events-none'>Enduring Legacies Timeless Frames</h1>
                     <h2 className=' hero_head_1 text-[11vw] translate-y-10 whitespace-nowrap'>Enduring Legacies</h2>
                     <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[5%] text-lg text-left lg:w-[350px] '>A photographic journey through Indian cinema from the Kamat
@@ -83,7 +83,7 @@ const Hero = () => {
                     <h2 className=' hero_head_2 text-[11vw]  whitespace-nowrap translate-y-[-10vw] md:translate-y-[1vw]'>Timeless Frames</h2>
                 </div>
 
-                <div className=" clip_div  absolute h-[50vh] lg:h-[70vh]  center w-[80%] md:w-[50%] lg:w-[30%] rounded-t-[1000px] overflow-hidden top-[45%] lg:top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                <div className=" clip_div  absolute h-[50vh] lg:h-[70vh]  center w-[80%] md:w-[50%] lg:w-[30%] rounded-t-[1000px] overflow-hidden top-[40%] lg:top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                     <img className='clip_img_2 opacity-0  w-full h-full object-cover brightness-75' src="/images/clipImage.avif" alt="Clip Image 2" />
                     <img className=' clip_img absolute mix-blend-overlay w-full h-full object-cover brightness-[1.5]' src="/images/andrew-neel-acowe0pCVBg-unsplash.webp" alt="Clip Image" />
                     <div id='schedule' className=" text-white absolute w-full h-[80%] flex flex-col lg:flex-row lg:gap-20 ">

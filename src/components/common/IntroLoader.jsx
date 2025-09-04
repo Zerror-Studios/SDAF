@@ -98,24 +98,24 @@ const IntroLoader = () => {
                     className="logo_img fixed w-[50%] lg:w-[25%] z-[99999] -translate-x-1/2 left-1/2 top-[40vh]"
                     src="/logo/SDAF black.png"
                     alt="logo"
-                    />
+                />
             </a>
-        <div className="loader_wrapper pointer-events-none w-full h-screen fixed z-[9999] top-0 left-0  ">
+            <div className="loader_wrapper pointer-events-none w-full h-screen fixed z-[9999] top-0 left-0  ">
 
-            <div className="ver_line origin-top absolute h-0 z-[99] w-[2px] bg-[#020202] left-1/2 -translate-x-1/2"></div>
-            <div className="slide_left w-1/2 h-screen absolute z-[-1] bg-[#ECE7D9] left-0"></div>
-            <div className="slide_right w-1/2 h-screen absolute z-[-1] bg-[#ECE7D9] right-0"></div>
+                <div className="ver_line origin-top absolute h-0 z-[99] w-[2px] bg-[#020202] left-1/2 -translate-x-1/2"></div>
+                <div className="slide_left w-1/2 h-screen absolute z-[-1] bg-[#ECE7D9] left-0"></div>
+                <div className="slide_right w-1/2 h-screen absolute z-[-1] bg-[#ECE7D9] right-0"></div>
 
-            <div className="loader_paren absolute bottom-32 gap-3 w-full flex-col center">
-                <div className="relative w-[50%] overflow-hidden rounded-full h-[2px] bg-black/20">
-                    <div className="loader_line absolute top-0 left-0 w-0 h-full bg-[#020202]"></div>
-                </div>
-                <div className="w-full center">
-                    <p>{progress < 10 ? `0${progress}` : progress} %</p>
+                <div className="loader_paren absolute bottom-32 gap-3 w-full flex-col center">
+                    <div className="relative w-[50%] overflow-hidden rounded-full h-[2px] bg-black/20">
+                        <div className="loader_line absolute top-0 left-0 w-0 h-full bg-[#020202]"></div>
+                    </div>
+                    <div className="w-full center">
+                        <p>{progress < 10 ? `0${progress}` : progress} %</p>
+                    </div>
                 </div>
             </div>
-        </div>
-                    </>
+        </>
     );
 };
 

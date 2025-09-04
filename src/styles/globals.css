@@ -22,6 +22,10 @@ body {
   background-size: contain;
   /* background-color:#020202 */
 }
+.bg_img{
+  background-image: url(../../public/images/paperboard-texture_compress.webp);
+  background-size: contain;
+}
 body::-webkit-scrollbar{
   display: none;
 }

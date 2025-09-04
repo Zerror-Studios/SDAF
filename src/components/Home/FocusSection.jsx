@@ -6,18 +6,18 @@ import SplitType from "split-type";
 
 
 const images = [
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f136a37bc1164cd76f4_gallery_img_8-p-500.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13278e574b066891ea_gallery_img_1.avif",
-  "https://cdn.prod.website-files.com/67862174a33a316e969b0659/678769a2ebfab8e3dfcc3ae6_main-img.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13c4e22ba69018d375_gallery_img_6.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f1314bd8e627442e371_gallery_img_2.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13b230be8a984914a2_gallery_img_5-p-500.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13587c2d107392176e_gallery_img_7-p-500.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13f0f497cad723842a_gallery_img_4-p-500.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13bb7fe2493228208f_gallery_img_10-p-500.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13c4e22ba69018d375_gallery_img_6.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f1314bd8e627442e371_gallery_img_2.avif",
-  "https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67474f13b230be8a984914a2_gallery_img_5-p-500.avif",
+  "/images/focus grid/BEES_SAAL_BAAD_1_KAMAT.webp",
+  "/images/focus grid/SHATRANJ_KE_KHILADI_2_KAMAT.webp",
+  "/images/focus grid/PYAASA_1_KAMAT.webp",
+  "/images/focus grid/HRHK_1_KAMAT.webp",
+  "/images/focus grid/MR_INDIA_1_KAMAT.webp",
+  "/images/focus grid/JAB_JAB_PHOOL_KHILE_1_KAMAT.webp",
+  "/images/focus grid/PAKEEZAH_2_KAMAT.webp",
+  "/images/focus grid/JIS_DESH_MEIN_GANGA_1_KAMAT.webp",
+  "/images/focus grid/NACH_GHAR_1_KAMAT.webp",
+  "/images/focus grid/TERE_GHAR_SAMNE_1_KAMAT.webp",
+  "/images/focus grid/MERA_SAYA_1_KAMAT.webp",
+  "/images/focus grid/CHAUDHAVI_KA_CHAND_1_KAMAT.webp",
 ]
 
 
@@ -129,6 +129,9 @@ const FocusSection = () => {
     }
 
     // ✅ Transform animations
+    tl.to(".cube_txt_3, .foc_hed", {
+      opacity: 0,
+    }, "parr")
     tl.fromTo(
       ".trans_div",
       {
@@ -155,15 +158,15 @@ const FocusSection = () => {
           from: "center",
           grid: gridConfig,
         },
-      }
+      }, "parr"
     );
   }, []);
 
 
   return (
     <div id='focus'>
-      <div className="focus_parent w-full h-[120vh] overflow-hidden  text-center center flex-col ">
-        <p className=' text-sm lg:text-xl translate-y-[-5vw] text-[#EB8529] '>OUR FOCUS</p>
+      <div className="focus_parent bg_img w-full h-[120vh] mb-[5vw]  text-center center flex-col ">
+        <p className=' text-sm foc_hed lg:text-xl translate-y-[-5vw] text-[#EB8529] '>OUR FOCUS</p>
         <div className="w-full  translate-y-[-2vw] relative ">
           <div className=" w-full flex h-fit items-center justify-center">
             <div className="block h-[13vw]  relative leading-[11vw] ">
@@ -184,7 +187,7 @@ const FocusSection = () => {
         <div className="w-full px-[4vw]  grid  gap-2 lg:gap-4 perspective-[1312px] grid-cols-3 md:grid-cols-4 absolute z-[-1]">
           {images.map((img, index) => (
             <div key={index} className="trans_div  overflow-hidden aspect-square transform-3d w-full ">
-              <img className='w-full h-full object-cover' src={img} alt={`Image ${index + 1}`} />
+              <img className='w-full h-full object-cover brightness-[.8] ' src={img} alt={`Image ${index + 1}`} />
             </div>
           ))}
         </div>

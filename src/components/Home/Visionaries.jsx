@@ -53,7 +53,7 @@ const Visionaries = () => {
 
     return (
         <div id='vision'>
-            <div className=" vision_paren  w-full  mb-[15vw]  h-screen relative center  ">
+            <div className=" vision_paren bg_img  w-full  h-screen relative center  ">
                 <div className=" vision_head block">
                 <h2 className='  text-3xl lg:text-7xl'>From the Visionaries</h2>
                 </div>

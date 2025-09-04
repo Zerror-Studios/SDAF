@@ -78,9 +78,9 @@ const EnduringSection = () => {
 
 
     return (
-        <div className='py-[10vw] px-[4vw] lg:px-0 w-full '>
+        <div  id='the-series' className='py-[10vw] px-[4vw] lg:px-0 w-full '>
             <div className=" lg:h-[100vh]  enduring_paren  w-full   center">
-                <div id='the-series' className=" w-full lg:w-[70%] h-full  center flex-col">
+                <div className=" w-full lg:w-[70%] h-full  center flex-col">
                     <div className="w-full h-[15vw] flex  justify-between">
                         <h2 className=' text-5xl  md:text-[10vw] translate-y-[-3.5vw] '>The </h2>
                         <div

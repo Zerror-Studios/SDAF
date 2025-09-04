@@ -84,7 +84,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className=" nav w-full h-16  fixed top-0 left-0 z-[999]  px-[4vw] flex items-center justify-between">
+      <div className=" nav w-full h-16   lg:fixed top-0 left-0 z-[999]  px-[4vw] flex items-center justify-between">
         <div className=" hidden lg:flex whitespace-nowrap  uppercase text-sm items-center h-full gap-5">
           {navLinks.map((link, i) => (
             <p

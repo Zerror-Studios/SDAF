@@ -71,7 +71,7 @@ const Exhibition = () => {
 
     return (
         <div id='the-exhibition'>
-            <div className=" exhib_paren  w-full px-[4vw] lg:px-0 h-screen relative center  ">
+            <div className=" exhib_paren bg_img  w-full px-[4vw] lg:px-0 h-screen relative center  ">
                 <div className=" exhib_head block">
                     <p className=' text-sm lg:text-xl text-[#EB8529]'>The Exhibition: Timeless Frames</p>
                     <h2 className='    text-3xl  lg:text-7xl'>About the Exhibition</h2>

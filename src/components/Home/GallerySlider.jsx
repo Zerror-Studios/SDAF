@@ -48,10 +48,10 @@ const GalleryData = [
 const GallerySlider = () => {
     return (
         <div  >
-            <div className="w-full pb-[20vw] lg:pb-0 lg:py-[5vw]  relative ">
+            <div  className="w-full pb-[20vw] lg:pb-0 lg:py-[5vw]  relative ">
                 {/* <img className='w-full h-full object-cover brightness-[.3] z-[-1] absolute top-0 left-0' src="https://cdn.prod.website-files.com/6734928e2af1829d3c568460/67aca7c5df93a525b9799963_Abstract%20Cosmic%20Landscape%201.avif" alt="" /> */}
-                <div className="w-full mb-10 lg:mb-0 py-[10vw] text-center">
-                    <h2 id='gallery'  className=' text-3xl lg:text-7xl'>A Glimpse Into the Archive</h2>
+                <div id='gallery'  className="w-full  mb-10 py-[5vw] text-center">
+                    <h2  className=' text-3xl lg:text-7xl'>A Glimpse Into the Archive</h2>
                 </div>
 
                 <div className="w-full flex  ">

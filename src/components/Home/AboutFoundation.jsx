@@ -36,7 +36,7 @@ const AboutFoundation = () => {
     }, [])
 
     return (
-        <div id='about'>
+        <div id='about' className=' pt-[5vw]'>
             <div className="foundation_parent w-full   px-[4vw]">
                 <div className="w-full h-full  grid lg:grid-cols-12 gap-x-[2rem] gap-y-[clamp(2.5rem,2.072rem+2.14vw,4rem)]">
 
