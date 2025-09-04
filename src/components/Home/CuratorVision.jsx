@@ -8,6 +8,8 @@ const CuratorVision = () => {
 
     useEffect(() => {
 
+        if(window.innerWidth < 1024) return
+
         gsap.from(".curat_paren h2", {
             y: 200,
             scrollTrigger: {

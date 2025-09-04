@@ -112,7 +112,7 @@ const ContactForm = () => {
                                 {/* Days */}
                                 <div>
                                     <p className="text-lg">I plan to visit on <span className='text-[#EB8529] text-sm'> (Optional)</span></p>
-                                    <div className="flex flex-wrap gap-4 mt-2">
+                                    <div className="flex flex-wrap text-sm lg:text-base gap-4 mt-2">
                                         {days.map((d) => (
                                             <label
                                                 onClick={() =>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                                                 }
                                                 key={d.value} className="flex items-center gap-2 cursor-pointer">
                                                 <div
-                                                    className={`size-4 border flex items-center justify-center transition ${selectedDays.includes(d.value) ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
+                                                    className={`size-3 lg:size-4 border flex items-center justify-center transition ${selectedDays.includes(d.value) ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
                                                         }`}
                                                 >
                                                     {selectedDays.includes(d.value) && <RiCheckLine />}
@@ -144,9 +144,9 @@ const ContactForm = () => {
                                             onClick={() =>
                                                 setUpdates((prev) => (prev.includes(u.value) ? prev.filter((x) => x !== u.value) : [...prev, u.value]))
                                             }
-                                            key={u.value} className="flex w-fit items-center gap-2 cursor-pointer mt-2">
+                                            key={u.value} className="flex text-sm lg:text-base w-fit items-center gap-2 cursor-pointer mt-2">
                                             <div
-                                                className={`size-4 border flex items-center justify-center transition ${updates.includes(u.value) ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
+                                                className={`size-3 lg:size-4 border flex items-center justify-center transition ${updates.includes(u.value) ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
                                                     }`}
                                             >
                                                 {updates.includes(u.value) && <RiCheckLine />}
@@ -164,9 +164,9 @@ const ContactForm = () => {
                                         {["Email", "WhatsApp", "Both"].map((opt) => (
                                             <label
                                                 onClick={() => setChannel(opt)}
-                                                key={opt} className="flex items-center gap-2 cursor-pointer mt-2">
+                                                key={opt} className="flex text-sm lg:text-base items-center gap-2 cursor-pointer mt-2">
                                                 <div
-                                                    className={`size-4 border flex items-center justify-center transition ${channel === opt ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
+                                                    className={`size-3 lg:size-4 border flex items-center justify-center transition ${channel === opt ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
                                                         }`}
                                                 >
                                                     {channel === opt && <RiCheckLine />}
@@ -180,9 +180,9 @@ const ContactForm = () => {
                                 {/* Consent */}
                                 <label
                                     onClick={() => setConsent(!consent)}
-                                    className="flex w-fit items-center gap-2 cursor-pointer">
+                                    className="flex  text-sm lg:text-base w-fit items-center gap-2 cursor-pointer">
                                     <div
-                                        className={`size-4 border flex items-center justify-center transition ${consent ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
+                                        className={`size-3 lg:size-4 border flex items-center justify-center transition ${consent ? "bg-[#EB8529]  border-[#EB8529]  text-white" : "border-black-400"
                                             }`}
                                     >
                                         {consent && <RiCheckLine />}

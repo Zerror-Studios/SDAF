@@ -165,7 +165,7 @@ const FocusSection = () => {
 
   return (
     <div id='focus'>
-      <div className="focus_parent bg_img   w-full h-[120vh] mb-[5vw]  text-center center flex-col ">
+      <div className="focus_parent bg_img  overflow-x-hidden lg:overflow-x-visible  w-full h-screen lg:min-h-[120vh] lg:mb-[5vw]  text-center center flex-col ">
         <p className=' text-sm foc_hed lg:text-xl translate-y-[-5vw] text-[#EB8529] '>OUR FOCUS</p>
         <div className="w-full  translate-y-[-2vw] relative ">
           <div className=" w-full flex h-fit items-center justify-center">
