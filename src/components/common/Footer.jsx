@@ -14,7 +14,9 @@ const Footer = () => {
       <div className=" w-full  px-[4vw]  ">
         <div className="w-full h-[30vh] flex">
           <div className="w-1/2 h-full flex items-center">
-            <img className=' h-[30%] lg:h-[50%]' src="/logo/SDAF black.png" alt="logo_black" />
+          <a href="#hero" className='h-[30%] lg:h-[50%]'>
+            <img className=' w-[80%]  md:w-[40%] ' src="/logo/SDAF black.png" alt="logo_black" />
+          </a>
           </div>
 
           <div className="w-1/2 h-full uppercase flex flex-col justify-center items-end">
