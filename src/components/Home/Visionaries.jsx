@@ -13,6 +13,7 @@ const Visionaries = () => {
                 trigger: ".vision_paren",
                 start: "top top",
                 end: "+=1500",
+                anticipatePin: 1,
                 scrub: true,
                 pin: true,
                 // markers: true
@@ -47,7 +48,7 @@ const Visionaries = () => {
 
     return (
         <div id='vision'>
-            <div className=" vision_paren bg_img    w-full  h-screen relative center  ">
+            <div className=" vision_paren bg_img  overflow-x-hidden   w-full  h-screen relative center  ">
                 <div className=" vision_head block">
                     <h2 className='  text-3xl lg:text-7xl'>From the Visionaries</h2>
                 </div>

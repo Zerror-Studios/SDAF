@@ -92,23 +92,23 @@ const Hero = () => {
                             <img className=' hidden lg:block hero_left_img  w-[60%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
                         </div>
                         <div className="w-full lg:w-1/2 h-full center">
-                            <div className="">
-                                <h2 className=' hero_split_txt hero  leading-14 text-3xl lg:text-5xl'>Programme & Schedule</h2>
+                            <div className="w-full">
+                                <h2 className=' hero_split_txt hero whitespace-nowrap  leading-14 text-3xl lg:text-5xl'>Programme & Schedule</h2>
                                 <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Opening Night (By Invitation)</p>
 
                                 <h2 className='   lg:text-2xl  hero_split_txt md:whitespace-nowrap '> Saturday, 20 Sep 2025 | 6 pm – 9 pm</h2>
-                                <p className='mt-2  text-xs  lg:text-sm hero_split_txt opacity-80'>6:20 pm — Welcome by SDAF</p>
-                                <p className=' text-xs  lg:text-sm hero_split_txt opacity-80'>6:25 pm — Remarks by Curator Parvez Damania</p>
-                                <p className=' text-xs  lg:text-sm hero_split_txt opacity-80'>6:30 pm — Guided Tour with Neha Kamat of the Kamat Archive</p>
+                                <p className='mt-2  text-xs  lg:text-sm hero_split_txt whitespace-nowrap opacity-80'>6:20 pm — Welcome by SDAF</p>
+                                <p className=' text-xs  lg:text-sm hero_split_txt whitespace-nowrap opacity-80'>6:25 pm — Remarks by Curator Parvez Damania</p>
+                                <p className=' text-xs  lg:text-sm hero_split_txt whitespace-nowrap opacity-80'>6:30 pm — Guided Tour with Neha Kamat of the Kamat Archive</p>
 
                                 <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Public Viewing (Open to All)</p>
 
-                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Sunday, 21 Sep – Friday, 26 Sep | 11 am – 8 pm</h2>
+                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Sunday, 21 Sep – Friday, 26 Sep | 12 pm – 8 pm</h2>
 
-                                <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Special Events</p>
+                                {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Special Events</p>
 
                                 <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Student Day: Tuesday, 23 Sep (Guided tours available)</h2>
-                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Talk & Q&A Session: Wednesday, 24 Sep | 6:00 pm – 7:00 pm</h2>
+                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Talk & Q&A Session: Wednesday, 24 Sep | 6:00 pm – 7:00 pm</h2> */}
 
                                 <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Venue</p>
 
@@ -137,11 +137,11 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className=" mt-10  lg:hidden mb-[30vw] text-[#020202] px-[5.5vw] w-full h-[100vh] flex flex-col lg:flex-row lg:gap-20 ">
-                <div className=" w-full h-full center">
+            <div className="  lg:hidden  mb-[20vw] text-[#020202] px-[5.5vw] w-full  flex flex-col lg:flex-row lg:gap-20 ">
+                <div className=" w-full my-[10vw] h-full center">
                     <img className='  hero_left_img  w-[70%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
                 </div>
-                <div className="w-full  mt-5 h-full center">
+                <div className="w-full  h-full center">
                     <div className="">
                         <h2 className=' hero_split_txt hero  leading-none text-[28px] lg:text-5xl'>Programme & Schedule</h2>
                         <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Opening Night (By Invitation)</p>
@@ -153,12 +153,12 @@ const Hero = () => {
 
                         <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Public Viewing (Open to All)</p>
 
-                        <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Sunday, 21 Sep – Friday, 26 Sep | 11 am – 8 pm</p>
+                        <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Sunday, 21 Sep – Friday, 26 Sep | 12 pm – 8 pm</p>
 
-                        <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Special Events</p>
+                        {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Special Events</p>
 
                         <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Student Day: Tuesday, 23 Sep (Guided tours available)</p>
-                        <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Talk & Q&A Session: Wednesday, 24 Sep | 6:00 pm – 7:00 pm</p>
+                        <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Talk & Q&A Session: Wednesday, 24 Sep | 6:00 pm – 7:00 pm</p> */}
 
                         <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Venue</p>
 

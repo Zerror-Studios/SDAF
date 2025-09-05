@@ -57,3 +57,8 @@ button {
   justify-content: center;
 }
 
+@media (min-width: 1024px) {  /* Tailwind's lg breakpoint */
+  .clip-on-laptop {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  }
+}

@@ -37,7 +37,7 @@ const AboutFoundation = () => {
 
     return (
         <div id='about' className=' pt-[5vw]'>
-            <div className="foundation_parent w-full     px-[4vw]">
+            <div className=" hidden lg:block foundation_parent w-full     px-[4vw]">
                 <div className="w-full h-full  grid lg:grid-cols-12 gap-x-[2rem] gap-y-[clamp(2.5rem,2.072rem+2.14vw,4rem)]">
 
                     <div className="lg:col-start-3 col-span-5">
@@ -74,6 +74,42 @@ const AboutFoundation = () => {
 
                 </div>
             </div>
+
+
+            {/* ////mobile//// */}
+            <div className=" w-full lg:hidden    px-[4vw]">
+                <div className="w-full h-full  center flex-col gap-10">
+
+                    <div className="w-full">
+                        <h2 className=' text-3xl  lg:text-[4.5vw] leading-none'>The Shivdutt Das Art Foundation</h2>
+                    </div>
+
+                    <div
+                        className="  ">
+                        <img src="/images/art foundation/img_1.webp" alt="SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT" />
+                    </div>
+
+                    <div
+                        className=" ">
+                        <img src="/images/art foundation/img_2.webp" alt="TeesriManzil 3" />
+                    </div>
+
+                    <div className="  w-full">
+                        <h2 className='  mb-2 uppercase text-[#EB8529] text-lg lg:text-xl'>Our Mission</h2>
+                        <p className=' text-sm lg:text-lg  opacity-80 '>To support education, culture, and public access to India's rich creative heritage.</p>
+                        <p className=' text-sm lg:text-lg  opacity-80 '>Shivdutt Das Art Foundation (SDAF) is an arts and cultural initiative by Shivdutt Das MD, Vishwa
+                            Samudra Holdings & Director, Shivdutt Das Charity Foundation) that supports education, culture and
+                            public access to heritage</p>
+                        <p className=' text-sm lg:text-lg  opacity-80'>SDAF spotlights the artists, artisans, and custodians who have shaped our nation's creative life. Through
+                            exhibitions, talks, and learning programs, we make their work accessible to all.</p>
+                    </div>
+
+                    
+
+
+                </div>
+            </div>
+
         </div>
     )
 }

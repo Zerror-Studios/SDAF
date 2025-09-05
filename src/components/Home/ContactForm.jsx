@@ -63,7 +63,7 @@ const ContactForm = () => {
     return (
         <div id='contact'>
             <ToastContainer />
-            <div className="w-full lg:h-screen   my-[5vw] flex flex-col lg:flex-row   px-[4vw]  ">
+            <div className="w-full lg:h-screen  bg_img  my-[5vw] flex flex-col lg:flex-row   px-[4vw]  ">
                 <div className=" w-full lg:w-1/2 h-full center">
                     <div className="">
                         <h2 className=' text-3xl lg:text-5xl'>Stay Connected</h2>

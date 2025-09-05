@@ -34,7 +34,8 @@ const FocusSection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".focus_parent",
-        start: "8% top",
+        start: "top top",
+        end: "+=2000",
         pin: true,
         scrub: true,
         anticipatePin: 1,
@@ -154,7 +155,7 @@ const FocusSection = () => {
         autoAlpha: 1,
         scale: 1,
         stagger: {
-          amount: 0.15,
+          amount: 0.2,
           from: "center",
           grid: gridConfig,
         },
@@ -165,9 +166,9 @@ const FocusSection = () => {
 
   return (
     <div id='focus'>
-      <div className="focus_parent bg_img  overflow-x-hidden lg:overflow-x-visible  w-full h-screen lg:min-h-[120vh] lg:mb-[5vw]  text-center center flex-col ">
-        <p className=' text-sm foc_hed lg:text-xl translate-y-[-5vw] text-[#EB8529] '>OUR FOCUS</p>
-        <div className="w-full  translate-y-[-2vw] relative ">
+      <div className="focus_parent  bg_img  overflow-x-hidden lg:overflow-x-visible  w-full h-screen lg:min-h-[120vh] lg:mb-[5vw]  text-center center flex-col ">
+        <p className=' text-sm foc_hed lg:text-xl translate-y-[-6vw] text-[#EB8529] '>OUR FOCUS</p>
+        <div className="w-full  translate-y-[-3vw] relative ">
           <div className=" w-full flex h-fit items-center justify-center">
             <div className="block h-[13vw]  relative leading-[11vw] ">
               <h2 className=' cube_txt_1 text-[13vw]   perspective-[1000px] transform-3d'>Preserve</h2>
@@ -175,7 +176,7 @@ const FocusSection = () => {
               <h2 className=' cube_txt_3 left-1/2 -translate-x-1/2 rotate-x-[-90deg] perspective-[1000px] transform-3d  absolute top-0 text-[13vw]'>Share</h2>
             </div>
           </div>
-          <div className=" w-full items-center justify-center">
+          <div className=" w-full px-[4vw] items-center justify-center">
 
             <div className=" block h-[25px]  relative leading-xl">
               <p className=' cube_txt_1  text-sm w-full  lg:text-2xl   perspective-[1000px] transform-3d'>We work with families and archives to protect vital cultural material.</p>
