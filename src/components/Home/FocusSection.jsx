@@ -154,6 +154,7 @@ const FocusSection = () => {
         rotateY: 0,
         autoAlpha: 1,
         scale: 1,
+        duration: 2,
         stagger: {
           amount: 0.2,
           from: "center",

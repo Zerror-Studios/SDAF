@@ -53,6 +53,7 @@ const Exhibition = () => {
             tl.from(".exhiv_slide_1", {
                 scale: 0.9,
                 opacity: 0,
+                duration: 2
             }, "pa")
         }
         tl.to(".exhiv_slide_1", {

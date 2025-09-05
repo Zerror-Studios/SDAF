@@ -22,21 +22,25 @@ const Visionaries = () => {
         tl.to(".vision_head", {
             scale: 0.9,
             opacity: 0,
+            duration: 1,
         }, "pa22")
         tl.from(".vision_imgs", {
             scale: 0.9,
             opacity: 0,
+            duration: 1,
             delay: 0.2
         }, "pa22")
         tl.from(".vision_img_1 , .vision_img_3", {
             scale: 0.9,
             opacity: 0,
+            duration: 1,
             delay: 1
         }, "pa22")
         if(window.innerWidth < 1024) {
              tl.to(".vision_img_2", {
             scale: 0.9,
             opacity: 0,
+            duration: 1,
             delay:0.8
         }, "pa22")
 
