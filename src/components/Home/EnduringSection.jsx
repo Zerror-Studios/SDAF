@@ -78,17 +78,18 @@ const EnduringSection = () => {
 
 
     return (
-        <div  id='the-series' className='py-[10vw] overflow-hidden px-[4vw] lg:px-0 w-full '>
+        <div  id='the-series' className='py-[10vw] pt-[25vw] lg:pt-[5vw] overflow-hidden px-[4vw] lg:px-0 w-full '>
             <div className=" lg:h-[100vh]  enduring_paren  w-full   center">
                 <div className=" w-full lg:w-[70%] h-full  center flex-col">
+
                     <div className="w-full h-[15vw] flex  justify-between">
-                        <h2 className=' text-5xl  md:text-[10vw] translate-y-[-3.5vw] '>The </h2>
+                        <h2 className=' text-5xl  md:text-[10vw] translate-y-[-3vw] '>The </h2>
                         <div
                             style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                             className=" clip_div_1 w-[35vw]  translate-y-[-4vw]  lg:w-[20vw] h-[100%] ">
                             <img className='w-full scale-[.9] lg:scale-[1] h-full object-cover brightness-75' src="/images/enduring/SANGAM_1_KAMAT.webp" alt="SANGAM_1_KAMAT" />
                         </div>
-                        <h2 className=' text-5xl   md:text-[10vw] translate-y-[-3.5vw] '>Series</h2>
+                        <h2 className=' text-5xl   md:text-[10vw] translate-y-[-3vw] '>Series</h2>
                     </div>
                     <div className="w-full h-[15vw] flex items-center justify-start gap-10">
                         <h2 className=' text-5xl h-fit pb-3  md:text-[10vw] translate-y-[-2vw]  inline-block bg-gradient-to-r from-[#EB8529] to-[#020202] bg-clip-text text-transparent '>Enduring</h2>

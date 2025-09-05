@@ -7,9 +7,9 @@ gsap.registerPlugin(CustomEase);
 
 
 const navLinks = [
+  { href: "#about", label: "About" },
   { href: "#the-series", label: "The Series" },
   { href: "#the-exhibition", label: "The Exhibition" },
-  { href: "#about", label: "About" },
   { href: "#gallery", label: "Gallery" },
 ]
 

@@ -41,10 +41,12 @@ const Exhibition = () => {
             top: "100%",
             duration: 2
         }, "pa")
-        tl.from(".exhiv_slide_1 h2", {
-            y: 100,
-            duration: 2
-        }, "pa")
+        if (window.innerWidth > 1024) {
+            tl.from(".exhiv_slide_1 h2", {
+                y: 100,
+                duration: 2
+            }, "pa")
+        }
         tl.to(".exhiv_slide_1", {
             scale: 0.9,
             opacity: 0,

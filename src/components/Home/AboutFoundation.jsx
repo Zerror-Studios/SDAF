@@ -21,16 +21,16 @@ const AboutFoundation = () => {
         })
 
 
-        tl.to(".found_clip_div_1", {
-            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-        }, "par2")
         tl.to(".found_clip_div_2", {
             clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-            delay: 0.2
+        }, "par2")
+        tl.to(".found_clip_div_1", {
+            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+            delay: 0.1
         }, "par2")
         tl.to(".found_clip_div_3", {
             clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-            delay: 0.4
+            delay: 0.3
         }, "par2")
 
     }, [])
@@ -47,7 +47,7 @@ const AboutFoundation = () => {
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                         className="  found_clip_div_1 translate-y-[5vw] row-start-2 col-span-3">
-                        <img src="/images/art foundation/SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT.webp" alt="SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT" />
+                        <img src="/images/art foundation/img_1.webp" alt="SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT" />
                     </div>
 
                     <div className="  lg:col-start-5 space-y-5 col-span-4">
@@ -63,13 +63,13 @@ const AboutFoundation = () => {
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                         className=" found_clip_div_2 lg:translate-y-[-10vw]  lg:col-start-10 col-span-3">
-                        <img src="/images/art foundation/TeesriManzil 3.webp" alt="TeesriManzil 3" />
+                        <img src="/images/art foundation/img_2.webp" alt="TeesriManzil 3" />
                     </div>
 
                     <div
                         style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                         className="  found_clip_div_3 h-[30vw] lg:col-start-6 col-span-5">
-                        <img src="/images/art foundation/SHRI_420_2_KAMAT.webp" alt="SHRI_420_2_KAMAT" />
+                        <img src="/images/art foundation/img_3.webp" alt="SHRI_420_2_KAMAT" />
                     </div>
 
                 </div>

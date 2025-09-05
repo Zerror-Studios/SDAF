@@ -16,12 +16,12 @@ const Home = ({ meta }) => {
     <>
       <SeoHeader meta={meta} />
       <Hero />
+      <AboutFoundation />
       <EnduringSection />
       <Exhibition />
       <ManBehind />
       <CuratorVision />
       <Visionaries />
-      <AboutFoundation />
       <FocusSection />
       <GallerySlider />
       <ContactForm />
