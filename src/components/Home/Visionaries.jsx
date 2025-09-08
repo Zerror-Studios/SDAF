@@ -68,7 +68,7 @@ const Visionaries = () => {
                     </div>
                     <div className=" vision_img_2 origin-center flex flex-col justify-center  items-center w-full gap-2 lg:gap-5  text-center ">
                         <div className=" w-[85%] md:w-[50%] lg:w-[70%]  ">
-                            <img className=' aspect-[3/4] object-cover ' src="/images/visionaries/shivDutt.webp" alt="loading" />
+                            <img className=' aspect-[3/4] object-cover object-right ' src="/images/visionaries/shivDutt.webp" alt="loading" />
                         </div>
                         <div className=" w-[85%] md:w-[50%] lg:w-[70%] ">
                             <p className='w-full text-left text-sm lg:text-lg leading-none'>“Preservation is only half the job; the other half is public access.”</p>
