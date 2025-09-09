@@ -86,10 +86,10 @@ const AboutFoundation = () => {
                         <img src="/images/art foundation/img4.jpeg" alt="SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT" />
                     </div>
 
-                    <div
+                    {/* <div
                         className=" ">
                         <img src="/images/art foundation/img3.jpeg" alt="TeesriManzil 3" />
-                    </div>
+                    </div> */}
 
                     <div className="  w-full">
                         <h2 className='  uppercase text-[#EB8529] text-sm lg:text-xl font-semibold mb-2'>Our Mission</h2>
