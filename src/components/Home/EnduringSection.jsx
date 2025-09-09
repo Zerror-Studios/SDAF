@@ -88,7 +88,7 @@ const EnduringSection = () => {
                         <div
                             // style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                             className=" clip-on-laptop   clip_div_1 w-[35vw]  translate-y-[-4vw]  lg:w-[20vw] h-[100%] ">
-                            <img className='w-full scale-[.9] lg:scale-[1] h-full object-cover brightness-75' src="/images/enduring/SANGAM_1_KAMAT.webp" alt="SANGAM_1_KAMAT" />
+                            <img className='w-full scale-[.9] lg:scale-[1] h-full object-cover ' src="/images/enduring/SANGAM_1_KAMAT.webp" alt="SANGAM_1_KAMAT" />
                         </div>
                         <h2 className=' text-5xl   md:text-[10vw] lg:translate-y-[-3vw] '>Series</h2>
                     </div>
@@ -97,7 +97,7 @@ const EnduringSection = () => {
                         <div
                             // style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                             className=" clip-on-laptop   clip_div_2 w-[35vw] lg:w-[20vw] h-[100%] ">
-                            <img className='w-full h-full object-cover brightness-75' src="/images/enduring/PAKEEZAH_1_KAMAT.webp" alt="PAKEEZAH_1_KAMAT" />
+                            <img className='w-full h-full object-cover ' src="/images/enduring/PAKEEZAH_1_KAMAT.webp" alt="PAKEEZAH_1_KAMAT" />
                         </div>
 
                     </div>
@@ -105,7 +105,7 @@ const EnduringSection = () => {
                         <div
                             // style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                             className=" clip-on-laptop   clip_div_3 w-[35vw] lg:w-[20vw] h-[100%] ">
-                            <img className='w-full h-full object-cover brightness-75' src="/images/enduring/TEESRI_MANZIL_1_KAMAT.webp" alt="TEESRI_MANZIL_1_KAMAT" />
+                            <img className='w-full h-full object-cover ' src="/images/enduring/TEESRI_MANZIL_1_KAMAT.webp" alt="TEESRI_MANZIL_1_KAMAT" />
                         </div>
                         <h2 className=' text-5xl  md:text-[10vw] translate-y-[-1vw] '>Legacies</h2>
                     </div>
