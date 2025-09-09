@@ -94,6 +94,7 @@ const Hero = () => {
                         <div className="w-full lg:w-1/2 h-full center">
                             <div className="w-full">
                                 <h2 className=' hero_split_txt hero whitespace-nowrap  leading-14 text-3xl lg:text-5xl'>Programme & Schedule</h2>
+                                <p className='hero_split_txt  w-[35vw]   mt-5'>The Exhibition will be held at the Dilip Piramal Art Gallery NCPA. NCPA is not only one for the most prestigious address but also the Dilip Piramal Art Gallery is the best place to exhibit photographs in Mumbai. This Gallery is specifically created to Exhibit photographs.</p>
                                 <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Opening Night (By Invitation)</p>
 
                                 <h2 className='   lg:text-2xl  hero_split_txt md:whitespace-nowrap '> Saturday, 20 Sep 2025 | 6 pm – 9 pm</h2>
@@ -137,6 +138,8 @@ const Hero = () => {
                 </div>
             </div>
 
+
+{/* /for mobile/ */}
             <div className="  lg:hidden  mb-[20vw] text-[#020202] px-[5.5vw] w-full  flex flex-col lg:flex-row lg:gap-20 ">
                 <div className=" w-full my-[10vw] h-full center">
                     <img className='  hero_left_img  w-[70%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
@@ -144,6 +147,7 @@ const Hero = () => {
                 <div className="w-full  h-full center">
                     <div className="">
                         <h2 className=' hero_split_txt hero  leading-none text-[28px] lg:text-5xl'>Programme & Schedule</h2>
+                                <p className='hero_split_txt text-sm  w-[100%]   mt-5'>The Exhibition will be held at the Dilip Piramal Art Gallery NCPA. NCPA is not only one for the most prestigious address but also the Dilip Piramal Art Gallery is the best place to exhibit photographs in Mumbai. This Gallery is specifically created to Exhibit photographs.</p>
                         <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Opening Night (By Invitation)</p>
 
                         <p className='   lg:text-2xl  hero_split_txt md:whitespace-nowrap '> Saturday, 20 Sep 2025 | 6 pm – 9 pm</p>
