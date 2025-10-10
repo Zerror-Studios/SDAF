@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
             <header><Header /></header>
             <IntroLoader />
             <main>{children}</main>
-            <footer><Footer /></footer>
+            {/* <footer><Footer /></footer> */}
         </div>
     )
 }

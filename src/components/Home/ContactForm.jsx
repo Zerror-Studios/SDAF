@@ -3,6 +3,14 @@ import React, { useState } from 'react'
 import MainBtn from '../buttons/MainBtn';
 import { toast, ToastContainer } from 'react-toastify';
 
+
+  const navLinks = [
+    { href: "#the-series", label: "The Series" },
+    { href: "#the-exhibition", label: "The Exhibition" },
+    { href: "#about", label: "About" },
+    { href: "#gallery", label: "Gallery" },
+  ]
+  
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         fullName: "",
@@ -63,12 +71,11 @@ const ContactForm = () => {
     return (
         <div id='contact'>
             <ToastContainer />
-            <div className="w-full lg:h-screen  bg_img  my-[5vw] flex flex-col lg:flex-row   px-[4vw]  ">
-                <div className=" w-full lg:w-1/2 h-full center">
+            <div className="w-full items-stretch pt-[8vw]  bg_img flex flex-col  lg:flex-row  ">
+                <div className=" w-full lg:w-1/2 h-full px-[4vw]">
                     <div className="">
-                        <h2 className=' text-3xl lg:text-5xl'>Stay Connected</h2>
-                        <p className=' text-sm lg:text-base leading-none  mt-3   '>Public viewing days are open to all. RSVP if you'd like event reminders and exclusive invitations to future
-                            Enduring Legacies exhibitions.</p>
+                        <h2 className=' text-3xl lg:text-5xl'>Join the SDAF Community</h2>
+                        <p className=' text-sm lg:text-base leading-none  mt-3   '>Be the first to know about future Enduring Legacies exhibitions and other SDAF initiatives.</p>
                         <div className="w-full">
                             <form onSubmit={handleSubmit} method='POST' className="mt-6 space-y-6">
                                 {/* Full Name */}
@@ -110,7 +117,7 @@ const ContactForm = () => {
                                 </div>
 
                                 {/* Days */}
-                                <div>
+                                {/* <div>
                                     <p className="text-lg">I plan to visit on <span className='text-[#EB8529] text-sm'> (Optional)</span></p>
                                     <div className="flex flex-wrap text-sm lg:text-base gap-4 mt-2">
                                         {days.map((d) => (
@@ -131,7 +138,7 @@ const ContactForm = () => {
                                             </label>
                                         ))}
                                     </div>
-                                </div>
+                                </div> */}
 
                                 {/* Updates */}
                                 <div>
@@ -198,26 +205,39 @@ const ContactForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" mt-10 lg:mt-0 w-full lg:w-1/2 h-full flex flex-col-reverse lg:flex-col justify-center lg:pl-20">
-                    <div className="w-full h-[50vh] lg:h-[55%]   mt-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.1368620643657!2d72.8173092752016!3d18.925335282248497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d12123ed5519%3A0xcc78e92c4db0967e!2sNational%20Centre%20for%20Performing%20Arts%20(NCPA)%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1756878016879!5m2!1sen!2sin"
-                            width="100%"
-                            height="100%"
-                            allowFullScreen=""
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            className=" border"
-                        ></iframe>
+                <div className=" w-full lg:w-1/2 px-[4vw] flex lg:items-end  ">
+                    <div className=" w-full flex lg:flex-col items-end justify-between">
+                        <div className=" w-[45%] lg:w-full lg:flex  lg:items-end lg:justify-end">
+                            <a href="#hero" className=' w-full lg:w-[40%]'>
+                                <img className=' w-full ' src="/logo/SDAF black.png" alt="logo_black" />
+                            </a>
+                        </div>
+                        <div className="h-full uppercase mt-10 flex flex-col justify-end lg:justify-center  items-end">
+                            {
+                                navLinks.map((link, i) => (
+                                    <p key={i} className='block group text-sm overflow-hidden relative cursor-pointer hover:opacity-60 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]'>
+                                        <a href={link.href}>
+                                            {link.label}
+                                        </a>
+                                        <span className="w-full h-[1px] bg-black absolute bottom-0.5 left-[-100%] group-hover:left-0 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)] rounded-full"></span>
+                                    </p>
+                                ))
+                            }
+
+                        </div>
                     </div>
-                    <div className=" mt-5">
+
+                    {/* <div className=" mt-5">
                         <h2 className='text-3xl'>Find Your Way to the Exhibition</h2>
                         <p className=' text-sm lg:text-base leading-none  mt-3 '>
                             Piramal NCPA Gallery National Centre for the Performing Arts, Nariman Point, Mumbai, Maharashtra
                             400021
                         </p>
-                    </div>
+                    </div> */}
                 </div>
+            </div>
+            <div className="w-full h-10 px-[4vw] my-5 border-t border-black/50 flex items-center lg:justify-end ">
+                <p className='text-sm text-black'>© 2025 SDAF. All rights reserved.</p>
             </div>
         </div>
     )

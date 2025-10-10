@@ -69,33 +69,37 @@ const Hero = () => {
     return (
         <div id='hero'>
             <div className=" hero_paren   bg_img w-full h-screen relative">
-                <p className=' absolute bottom-[15%] text-xs lg:hidden hero_para_1 ml-[10%] text-left w-[300px] '>A photographic journey through Indian cinema from the Kamat
-                    Foto Studio Archive. A tribute to the pioneering photographer,
-                    Damodar Kamat.
-                </p>
+                <p className=' absolute bottom-[10%] text-xs lg:hidden hero_para_1 ml-[10%] text-left w-[300px] leading-tight '>In September 2025, SDAF was proud to present Timeless Frames, a tribute to the pioneering photographer Damodar Kamat. The exhibition was a resounding success, celebrating a son of Maharashtra and unveiling a historic collection of unseen photographs.</p>
                 {/* <img className='w-full pointer-events-none h-full object-cover brightness-75' src="/images/hero_bg.avif" alt="" /> */}
                 <div className=" pointer-events-none absolute z-[9] top-[55%] lg:top-1/2 h-screen -translate-y-1/2  left-1/2 -translate-x-1/2  text-center   flex flex-col justify-between">
                     <h1 className='opacity-0 text-xs absolute pointer-events-none'>Enduring Legacies Timeless Frames</h1>
-                    <h2 className=' hero_head_1 text-[11vw] translate-y-10 whitespace-nowrap'>Enduring Legacies</h2>
-                    <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[5%] text-lg text-left lg:w-[350px] '>A photographic journey through Indian cinema from the Kamat
-                        Foto Studio Archive. A tribute to the pioneering photographer,
-                        Damodar Kamat.
-                    </p>
+                    <div className=' hero_head_1 text-[11vw] relative translate-y-10 whitespace-nowrap'>
+                        <h2>
+                            Enduring Legacies
+                        </h2>
+                        <div className="  absolute  lg:bottom-3 right-0 text-base text-end">
+                        <p className='leading-none text-xs lg:text-lg'> — A Look Back at Our Successful <br /> Inaugural Exhibition</p>
+                        </div>
+                    </div>
+                    <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[2%] text-lg text-left lg:w-[400px] leading-tight '>In September 2025, SDAF was proud to present Timeless Frames, a tribute to the pioneering photographer Damodar Kamat. The exhibition was a resounding success, celebrating a son of Maharashtra and unveiling a historic collection of unseen photographs.</p>
                     <h2 className=' hero_head_2 text-[11vw]   whitespace-nowrap translate-y-[-10vw] md:translate-y-[1vw]'>Timeless Frames</h2>
                 </div>
 
                 <div className=" clip_div  absolute h-[50vh] lg:h-[70vh]  center w-[80%] md:w-[50%] lg:w-[30%] rounded-t-[1000px] overflow-hidden top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                     {/* <img className='clip_img_2 opacity-0  w-full h-full object-cover brightness-75' src="/images/clipImage.avif" alt="Clip Image 2" /> */}
-                    <img className=' clip_img absolute  w-full h-full object-cover brightness-[1]' src="/images/focus grid/PYAASA_1_KAMAT.webp" alt="Clip Image" />
+                    <video loop autoPlay muted playsInline className=' clip_img absolute  w-full h-full object-cover brightness-[1]' src="/videos/hero_video.mp4" alt="Clip Image" />
+
+
                     <div id='schedule' className=" opacity-0 lg:opacity-100 text-white absolute w-full h-[80%] flex flex-col lg:flex-row lg:gap-20 ">
                         <div className="hidden lg:block w-1/2 h-full center">
-                            <img className=' hidden lg:block hero_left_img  w-[60%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
+                            <img className=' hidden lg:block hero_left_img  w-[50%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
                         </div>
-                        <div className="w-full lg:w-1/2 h-full center">
-                            <div className="w-full">
-                                <h2 className=' hero_split_txt hero whitespace-nowrap  leading-14 text-3xl lg:text-5xl'>Programme & Schedule</h2>
-                                <p className='hero_split_txt  w-[35vw]   mt-5'>The Exhibition will be held at the Dilip Piramal Art Gallery NCPA. NCPA is not only one for the most prestigious address but also the Dilip Piramal Art Gallery is the best place to exhibit photographs in Mumbai. This Gallery is specifically created to Exhibit photographs.</p>
-                                <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Opening Night (By Invitation)</p>
+                        <div className="w-full lg:w-1/2 h-full   center">
+                            <div className="w-full ">
+                                <h2 className=' hero_split_txt hero whitespace-nowrap  leading-14 text-3xl lg:text-5xl'>Event Highlights</h2>
+                                <p className='hero_split_txt mt-10 text-lg   w-[35vw]'>The week-long event featured a spectacular opening night inaugurated by the Hon’ble Chief Minister Shri Devendra Fadnavis, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
+                                <p className='hero_split_txt mt-5 text-lg  w-[35vw]'>Visitors were treated to curated displays of rare and iconic photographs, offering a deep dive into Damodar Kamat’s visual legacy. Each image told a story, highlighting the artistry, craft, and cultural significance of Indian cinema from the 1950s to the 1980s.</p>
+                                {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Opening Night (By Invitation)</p>
 
                                 <h2 className='   lg:text-2xl  hero_split_txt md:whitespace-nowrap '> Saturday, 20 Sep 2025 | 6 pm – 9 pm</h2>
                                 <p className='mt-2  text-xs  lg:text-sm hero_split_txt whitespace-nowrap opacity-80'>6:20 pm — Welcome by SDAF</p>
@@ -106,14 +110,10 @@ const Hero = () => {
 
                                 <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Sunday, 21 Sep – Friday, 26 Sep | 12 pm – 8 pm</h2>
 
-                                {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Special Events</p>
-
-                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Student Day: Tuesday, 23 Sep (Guided tours available)</h2>
-                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Talk & Q&A Session: Wednesday, 24 Sep | 6:00 pm – 7:00 pm</h2> */}
 
                                 <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Venue</p>
 
-                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Piramal NCPA Gallery, Nariman Point, Mumbai</h2>
+                                <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Piramal NCPA Gallery, Nariman Point, Mumbai</h2> */}
 
                                 <div className="hero_split_txt  mt-10 ">
                                     <a href="#contact">
@@ -139,18 +139,19 @@ const Hero = () => {
             </div>
 
 
-{/* /for mobile/ */}
+            {/* /for mobile/ */}
             <div className="  lg:hidden  mb-[20vw] text-[#020202] px-[5.5vw] w-full  flex flex-col lg:flex-row lg:gap-20 ">
                 <div className=" w-full my-[10vw] h-full center">
                     <img className='  hero_left_img  w-[70%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
                 </div>
                 <div className="w-full  h-full center">
                     <div className="">
-                        <h2 className=' hero_split_txt hero  leading-none text-[28px] lg:text-5xl'>Programme & Schedule</h2>
-                                <p className='hero_split_txt text-sm  w-[100%]   mt-5'>The Exhibition will be held at the Dilip Piramal Art Gallery NCPA. NCPA is not only one for the most prestigious address but also the Dilip Piramal Art Gallery is the best place to exhibit photographs in Mumbai. This Gallery is specifically created to Exhibit photographs.</p>
-                        <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Opening Night (By Invitation)</p>
+                        <h2 className=' hero_split_txt hero  leading-none text-[28px] lg:text-5xl'>Event Highlights</h2>
+                        <p className='hero_split_txt text-sm  w-[100%]   mt-5'>The week-long event featured a spectacular opening night inaugurated by the Hon’ble Chief Minister Shri Devendra Fadnavis, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
+                        <p className='hero_split_txt text-sm  w-[100%]   mt-5'>Visitors were treated to curated displays of rare and iconic photographs, offering a deep dive into Damodar Kamat’s visual legacy. Each image told a story, highlighting the artistry, craft, and cultural significance of Indian cinema from the 1950s to the 1980s.</p>
+                        {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Opening Night (By Invitation)</p> */}
 
-                        <p className='   lg:text-2xl  hero_split_txt md:whitespace-nowrap '> Saturday, 20 Sep 2025 | 6 pm – 9 pm</p>
+                        {/* <p className='   lg:text-2xl  hero_split_txt md:whitespace-nowrap '> Saturday, 20 Sep 2025 | 6 pm – 9 pm</p>
                         <p className='mt-2  text-xs  lg:text-sm hero_split_txt opacity-80'>6:20 pm — Welcome by SDAF</p>
                         <p className=' text-xs  lg:text-sm hero_split_txt opacity-80'>6:25 pm — Remarks by Curator Parvez Damania</p>
                         <p className=' text-xs  lg:text-sm hero_split_txt opacity-80'>6:30 pm — Guided Tour with Neha Kamat of the Kamat Archive</p>
@@ -158,15 +159,15 @@ const Hero = () => {
                         <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Public Viewing (Open to All)</p>
 
                         <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Sunday, 21 Sep – Friday, 26 Sep | 12 pm – 8 pm</p>
-
+ */}
                         {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Special Events</p>
 
                         <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Student Day: Tuesday, 23 Sep (Guided tours available)</p>
                         <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Talk & Q&A Session: Wednesday, 24 Sep | 6:00 pm – 7:00 pm</p> */}
 
-                        <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Venue</p>
+                        {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Venue</p>
 
-                        <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Piramal NCPA Gallery, Nariman Point, Mumbai</p>
+                        <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Piramal NCPA Gallery, Nariman Point, Mumbai</p> */}
 
                         <div className="hero_split_txt  mt-5 ">
                             <a href="#contact">

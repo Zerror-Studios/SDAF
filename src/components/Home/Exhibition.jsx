@@ -84,33 +84,34 @@ const Exhibition = () => {
         <div id='the-exhibition'>
             <div className=" exhib_paren bg_img    w-full px-[4vw] lg:px-0 h-screen relative center  ">
                 <div className=" exhib_head block">
-                    <p className=' text-sm lg:text-xl text-[#EB8529]'>The Exhibition: Timeless Frames</p>
+                    <p className=' text-sm lg:text-xl text-[#EB8529]'>Exhibition Archive: Timeless Frames</p>
                     <h2 className='    text-3xl  lg:text-7xl'>About the Exhibition</h2>
                 </div>
                 <div className=" exhib_para_1  absolute text-center w-[90%] md:w-[50%]  left-1/2 -translate-x-1/2">
-                    <h2 className=' text-xl lg:text-3xl leading-none '>Timeless Frames is a museum-style homage to the still photographs that taught India how to see its
-                        cinema. Drawn from the meticulously stewarded Kamat Foto Studio Archive, the exhibition presents
-                        rare black-and-white and color stills from the 1950s–1980s.
-                    </h2>
+                    <h2 className=' text-xl lg:text-3xl leading-none '>Timeless Frames was a museum-style homage to the still photographs that taught India how to see its
+                        cinema. Drawn from the meticulously stewarded Kamat Foto Studio Archive, the exhibition presented
+                        rare black-and-white and colour stills from the 1950s–1980s.</h2>
                 </div>
                 <div className=" exhib_para_2  absolute text-center w-[90%] md:w-[50%]  left-1/2 -translate-x-1/2">
-                    <h2 className=' text-xl lg:text-3xl leading-none '>Beyond star portraits, these images reveal how photography powered the filmmaking process itself by</h2>
+                    <h2 className='text-xl lg:text-3xl leading-none'>
+                        Beyond star portraits, these images revealed how photography powered the filmmaking process itself — a legacy we celebrated through a series of galleries showcasing the art, the opening night, and the vibrant atmosphere of the exhibition.
+                    </h2>
                 </div>
 
                 <div className="exhiv_slide_1   flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[450px]  left-1/2 -translate-x-1/2">
-                    <h2 className='  text-3xl  lg:text-7xl z-[9] whitespace-nowrap'>Raising Finance</h2>
-                    <img className='w-full aspect-square object-cover brightness-75' src="/images/exhibition/GUIDE_1_KAMAT.webp" alt="GUIDE_1_KAMAT" />
-                    <p className='w-full text-left leading-none text-sm lg:text-lg'>Producers used stills albums to secure funding for their projects.</p>
+                    <h2 className='  text-3xl  lg:text-7xl z-[9] whitespace-nowrap'>The Art</h2>
+                    <img className='w-full aspect-square object-cover ' src="/images/exhibition/kamat.webp" alt="GUIDE_1_KAMAT" />
+                    <p className='w-full text-left leading-none text-sm lg:text-lg'>This striking photograph of Damodar Kamat offers a glimpse into the visual poetry that made his stills an enduring part of India’s cinematic memory.</p>
                 </div>
                 <div className="exhiv_slide_2    flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[450px]  left-1/2 -translate-x-1/2">
-                    <h2 className='  text-3xl  lg:text-7xl whitespace-nowrap'>Maintaining Continuity</h2>
-                    <img className='w-full aspect-square object-cover brightness-75' src="/images/exhibition/MERA_NAAM_JOKER_1_KAMAT.webp" alt="MERA_NAAM_JOKER_1_KAMAT" />
-                    <p className='w-full text-left leading-none text-sm lg:text-lg'>Photos served as crucial references for sets, costumes, and actor positions across long shoots.</p>
+                    <h2 className='  text-3xl  lg:text-7xl whitespace-nowrap'>The Opening Night</h2>
+                    <img className='w-full aspect-square object-cover' src="/images/exhibition/img2.jpeg" alt="MERA_NAAM_JOKER_1_KAMAT" />
+                    <p className='w-full text-left leading-none text-sm lg:text-lg'>Highlights from the inauguration evening, capturing the excitement, interactions, and celebrations that marked the launch of Timeless Frames.</p>
                 </div>
                 <div className="exhiv_slide_3    flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[450px]  left-1/2 -translate-x-1/2">
-                    <h2 className='  text-3xl  lg:text-7xl whitespace-nowrap'>Crafting Publicity</h2>
-                    <img className='w-full aspect-square object-cover brightness-75' src="/images/exhibition/UMRAO_JAAN_1_KAMAT.webp" alt="UMRAO_JAAN_1_KAMAT" />
-                    <p className='w-full text-left leading-none text-sm lg:text-lg'>These images formed the visual language of magazines and theatre lobbies, building excitement long before trailers.</p>
+                    <h2 className='  text-3xl  lg:text-7xl whitespace-nowrap'>The Atmosphere</h2>
+                    <img className='w-full aspect-square object-cover' src="/images/exhibition/img3.jpeg" alt="UMRAO_JAAN_1_KAMAT" />
+                    <p className='w-full text-left leading-none text-sm lg:text-lg'>Capturing the gallery space, musical performances, and moments of guests engaging with the art, these images bring the vibrant atmosphere of Timeless Frames to life.</p>
                 </div>
             </div>
         </div>

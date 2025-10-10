@@ -54,37 +54,39 @@ const Visionaries = () => {
         <div id='vision'>
             <div className=" vision_paren bg_img  overflow-x-hidden   w-full  h-screen relative center  ">
                 <div className=" vision_head block">
-                    <h2 className='  text-3xl lg:text-7xl'>From the Visionaries</h2>
+                    <h2 className='  text-3xl lg:text-7xl'>What Our Guests Said</h2>
                 </div>
                 <div className=" vision_imgs  w-full h-full absolute  grid grid-rows-3 lg:grid-rows-none  lg:grid-cols-[30%_40%_30%]">
-                    <div className=" vision_img_1 translate-y-[20vw] lg:translate-y-0 translate-x-[-10vw] lg:translate-x-0 origin-center flex flex-col  justify-center items-end w-full gap-2 lg:gap-5 text-center ">
+                    <div className=" vision_img_1 translate-y-[20vw] lg:translate-y-0 translate-x-[-10vw] lg:translate-x-0 origin-center flex flex-col  justify-center items-end w-full gap-2 text-center ">
                         <div className=" w-[50%] md:w-[35%]  lg:w-[55%] ">
-                            <img className='aspect-[3/4] object-cover ' src="/images/visionaries/neha.jpeg" alt="loading" />
+                            <video loop autoPlay playsInline muted controls className='aspect-[3/4] object-cover ' src="/videos/spok2.mp4" alt="loading" />
 
                         </div>
                         <div className="w-[50%] md:w-[35%]  lg:w-[55%]">
-                            <p className='w-full text-left text-xs lg:text-sm  leading-none'>“From studio file to museum wall—every still is light, craft, and history.”</p>
-                            <h2 className='text-end text-sm lg:text-base  mt-2'>— Neha Kamat</h2>
+                            {/* <p className='w-full text-left text-xs lg:text-sm  leading-none'>“From studio file to museum wall—every still is light, craft, and history.”</p> */}
+                            <h2 className='text-end text-sm lg:text-base  '>— Mark Manuel</h2>
+                            <h2 className='text-end text-sm lg:text-base  '>— Jitu Savlani.</h2>
 
                         </div>
                     </div>
-                    <div className=" vision_img_2 origin-center flex flex-col justify-center  items-center w-full gap-2 lg:gap-5  text-center ">
+                    <div className=" vision_img_2 origin-center flex flex-col justify-center  items-center w-full gap-2  text-center ">
                         <div className=" w-[85%] md:w-[50%] lg:w-[70%]  ">
-                            <img className=' aspect-[3/4] object-cover object-right ' src="/images/visionaries/shivDutt.webp" alt="loading" />
+                            <video loop autoPlay playsInline muted controls className=' aspect-[3/4] object-cover object-right ' src="/videos/spok1.mp4" alt="loading" />
                         </div>
                         <div className=" w-[85%] md:w-[50%] lg:w-[70%] ">
-                            <p className='w-full text-left text-sm lg:text-lg leading-none'>“Preservation is only half the job; the other half is public access.”</p>
-                            <h2 className='text-end text-base lg:text-xl  mt-2'>— Shivdutt Das </h2>
+                            {/* <p className='w-full text-left text-sm lg:text-lg leading-none'>“Preservation is only half the job; the other half is public access.”</p> */}
+                            <h2 className='text-end text-base lg:text-xl  '>— Ajay Devgn </h2>
+                            <h2 className='text-end text-base lg:text-xl  '>— Seema Singh </h2>
+                            <h2 className='text-end text-base lg:text-xl  '>—  Ashish Chowdhry</h2>
                         </div>
                     </div>
-                    <div className="  vision_img_3  translate-y-[-20vw]  lg:translate-y-0 translate-x-[10vw]  lg:translate-x-0 origin-center  flex flex-col justify-center  items-start w-full gap-2 lg:gap-5 text-center ">
+                    <div className="  vision_img_3  translate-y-[-20vw]  lg:translate-y-0 translate-x-[10vw]  lg:translate-x-0 origin-center  flex flex-col justify-center  items-start w-full gap-2  text-center ">
                         <div className="w-[50%] md:w-[35%]  lg:w-[55%] ">
-                            <img className=' aspect-[3/4] object-cover ' src="/images/visionaries/Parvez Damania.webp" alt="loading" />
-
+                            <video loop autoPlay playsInline muted controls className=' aspect-[3/4] object-cover  ' src="/videos/spok3.mp4" alt="loading" />
                         </div>
                         <div className="w-[50%] md:w-[35%]  lg:w-[55%]">
-                            <p className='w-full text-left text-xs lg:text-sm  leading-none'>“Archives aren’t nostalgia—they’re raw material for new imagination.”</p>
-                            <h2 className='text-end text-sm lg:text-base  mt-2'>— Parvez Damania</h2>
+                            {/* <p className='w-full text-left text-xs lg:text-sm  leading-none'>“Archives aren’t nostalgia—they’re raw material for new imagination.”</p> */}
+                            <h2 className='text-end text-sm lg:text-base'>— Parvez Damania</h2>
 
                         </div>
                     </div>

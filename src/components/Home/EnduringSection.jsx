@@ -129,6 +129,8 @@ const EnduringSection = () => {
                             Our first edition opens with a photographic journey into the classic decades of Indian cinema, courtesy
                             of the legendary Kamat Foto Studio.
                         </p>
+                        <p className='split_para_2   '>
+                            The journey to celebrate India's unsung heroes has just begun. Stay tuned for announcements on Edition 2 of the Enduring Legacies series.</p>
                     </div>
                 </div>
             </div>
