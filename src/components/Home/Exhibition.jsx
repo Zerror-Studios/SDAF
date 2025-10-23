@@ -84,8 +84,8 @@ const Exhibition = () => {
         <div id='the-exhibition'>
             <div className=" exhib_paren bg_img    w-full px-[4vw] lg:px-0 h-screen relative center  ">
                 <div className=" exhib_head block">
-                    <p className=' text-sm lg:text-xl text-[#EB8529]'>Exhibition Archive: Timeless Frames</p>
-                    <h2 className='    text-3xl  lg:text-7xl'>About the Exhibition</h2>
+                    <p className=' text-sm lg:text-xl text-[#EB8529]'>Exhibition Archive</p>
+                    <h2 className='    text-3xl  lg:text-7xl'>Timeless Frames</h2>
                 </div>
                 <div className=" exhib_para_1  absolute text-center w-[90%] md:w-[50%]  left-1/2 -translate-x-1/2">
                     <h2 className=' text-xl lg:text-3xl leading-none '>Timeless Frames was a museum-style homage to the still photographs that taught India how to see its

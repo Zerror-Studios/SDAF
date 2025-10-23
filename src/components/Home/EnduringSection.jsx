@@ -126,7 +126,7 @@ const EnduringSection = () => {
                         <p className='split_para_1   '>Enduring Legacies is a recurring series dedicated to creators who had an outsized impact on India’s
                             cultural landscape, often from behind the scenes.</p>
                         <p className='split_para_2   '>
-                            Our first edition opens with a photographic journey into the classic decades of Indian cinema, courtesy
+                            Our first edition opened with a photographic journey into the classic decades of Indian cinema, courtesy
                             of the legendary Kamat Foto Studio.
                         </p>
                         <p className='split_para_2   '>

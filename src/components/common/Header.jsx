@@ -104,11 +104,11 @@ const Header = () => {
         <div className=" lg:w-[25%] gap-2 flex items-center justify-end h-full ">
           <div className="flex items-center gap-2">
             <a href="#contact">
-              <MainBtn txt="RSVP" />
+              <MainBtn txt="Join the SDAF Community" />
             </a>
             <RiMenuLine onClick={openMenu} className='lg:hidden' size={30} />
           </div>
-          <a href="https://maps.app.goo.gl/fLQy21BRnGkxEJpb6"
+          {/* <a href="https://maps.app.goo.gl/fLQy21BRnGkxEJpb6"
             target="_blank"
             rel="noopener noreferrer"
             className=' hidden lg:block  w-[10%]'>
@@ -118,7 +118,7 @@ const Header = () => {
               src="/images/location_icon2.png"
               alt="Drop Location"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

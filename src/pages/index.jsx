@@ -19,11 +19,11 @@ const Home = ({ meta }) => {
       <AboutFoundation />
       <EnduringSection />
       <Exhibition />
-      <ManBehind />
-      <CuratorVision />
+      {/* <ManBehind /> */}
+      {/* <CuratorVision /> */}
       <Visionaries />
       <FocusSection />
-      <GallerySlider />
+      {/* <GallerySlider /> */}
       <ContactForm />
     </>
   );

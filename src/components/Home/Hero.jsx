@@ -51,7 +51,7 @@ const Hero = () => {
             borderTopRightRadius: "0",
         }, "par")
         tl.to(".clip_img", {
-            filter: "brightness(.3)"
+            filter: "brightness(.1)"
         }, "par")
         tl.to(".clip_img_2", {
             opacity: 1
@@ -77,27 +77,31 @@ const Hero = () => {
                         <h2>
                             Enduring Legacies
                         </h2>
-                        <div className="  absolute  lg:bottom-3 right-0 text-base text-end">
-                        <p className='leading-none text-xs lg:text-lg'> — A Look Back at Our Successful <br /> Inaugural Exhibition</p>
+                        <div className=" md:hidden  absolute  lg:bottom-3 right-0 text-base text-end">
+                            <p className='leading-none text-xs lg:text-lg'> A Look Back at Our Successful <br /> Inaugural Exhibition</p>
                         </div>
                     </div>
+                    <div className="w-full flex justify-between">
                     <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[2%] text-lg text-left lg:w-[400px] leading-tight '>In September 2025, SDAF was proud to present Timeless Frames, a tribute to the pioneering photographer Damodar Kamat. The exhibition was a resounding success, celebrating a son of Maharashtra and unveiling a historic collection of unseen photographs.</p>
+                    <p className=' opacity-0 lg:opacity-100 text-end hero_para_1 mr-[2%] text-lg  lg:w-[400px] leading-tight '>A Look Back at Our Successful <br /> Inaugural Exhibition</p>
+                    </div>
                     <h2 className=' hero_head_2 text-[11vw]   whitespace-nowrap translate-y-[-10vw] md:translate-y-[1vw]'>Timeless Frames</h2>
                 </div>
 
                 <div className=" clip_div  absolute h-[50vh] lg:h-[70vh]  center w-[80%] md:w-[50%] lg:w-[30%] rounded-t-[1000px] overflow-hidden top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                     {/* <img className='clip_img_2 opacity-0  w-full h-full object-cover brightness-75' src="/images/clipImage.avif" alt="Clip Image 2" /> */}
-                    <video loop autoPlay muted playsInline className=' clip_img absolute  w-full h-full object-cover brightness-[1]' src="/videos/hero_video.mp4" alt="Clip Image" />
+                    <img className=' clip_img absolute  w-full h-full object-cover brightness-[1]' src="/images/focus grid/PYAASA_1_KAMAT.webp" alt="Clip Image" />
+                    {/* <video loop autoPlay muted playsInline className=' clip_img absolute  w-full h-full object-cover brightness-[1]' src="/videos/hero_video.mp4" alt="Clip Image" /> */}
 
 
                     <div id='schedule' className=" opacity-0 lg:opacity-100 text-white absolute w-full h-[80%] flex flex-col lg:flex-row lg:gap-20 ">
-                        <div className="hidden lg:block w-1/2 h-full center">
-                            <img className=' hidden lg:block hero_left_img  w-[50%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
+                        <div className="hidden lg:block w-[70%] pl-[4vw]  center">
+                            <video loop autoPlay muted playsInline controls className=' hero_left_img   w-full aspect-video object-cover' src="/videos/hero_video.mp4" alt="Clip Image" />
                         </div>
                         <div className="w-full lg:w-1/2 h-full   center">
                             <div className="w-full ">
                                 <h2 className=' hero_split_txt hero whitespace-nowrap  leading-14 text-3xl lg:text-5xl'>Event Highlights</h2>
-                                <p className='hero_split_txt mt-10 text-lg   w-[35vw]'>The week-long event featured a spectacular opening night inaugurated by the Hon’ble Chief Minister Shri Devendra Fadnavis, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
+                                <p className='hero_split_txt mt-10 text-lg   w-[35vw]'>The week-long event featured a spectacular opening night, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
                                 <p className='hero_split_txt mt-5 text-lg  w-[35vw]'>Visitors were treated to curated displays of rare and iconic photographs, offering a deep dive into Damodar Kamat’s visual legacy. Each image told a story, highlighting the artistry, craft, and cultural significance of Indian cinema from the 1950s to the 1980s.</p>
                                 {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-10'>Opening Night (By Invitation)</p>
 
@@ -115,14 +119,14 @@ const Hero = () => {
 
                                 <h2 className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Piramal NCPA Gallery, Nariman Point, Mumbai</h2> */}
 
-                                <div className="hero_split_txt  mt-10 ">
+                                {/* <div className="hero_split_txt  mt-10 ">
                                     <a href="#contact">
                                         <button className="relative text-[#ffffff]  overflow-hidden group 
                       border border-white/70 uppercase  text-xs  lg:text-sm px-3 lg:px-5 py-1 lg:py-2 rounded-full
                      whitespace-nowrap transition-all duration-500 ease-[cubic-bezier(0.625,0.05,0,1)] 
                      hover:border-[#EB8529] hover:text-black">
 
-                                            <p className='translate-y-[1px]'>RSVP</p>
+                                            <p className='translate-y-[1px]'>Join the SDAF Community</p>
 
                                             <div className="w-full h-full z-[-1]  bg-[#EB8529] 
                     absolute top-[100%] left-0 
@@ -131,7 +135,7 @@ const Hero = () => {
                                             </div>
                                         </button>
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -141,13 +145,13 @@ const Hero = () => {
 
             {/* /for mobile/ */}
             <div className="  lg:hidden  mb-[20vw] text-[#020202] px-[5.5vw] w-full  flex flex-col lg:flex-row lg:gap-20 ">
-                <div className=" w-full my-[10vw] h-full center">
-                    <img className='  hero_left_img  w-[70%]  brightness-75' src="/images/frame-removebg.png" alt="Silent Era" />
+                <div className=" w-full aspect-video my-[10vw]  center">
+                    <video loop autoPlay muted playsInline controls className=' hero_left_img   w-full aspect-video object-cover' src="/videos/hero_video.mp4" alt="Clip Image" />
                 </div>
                 <div className="w-full  h-full center">
                     <div className="">
                         <h2 className=' hero_split_txt hero  leading-none text-[28px] lg:text-5xl'>Event Highlights</h2>
-                        <p className='hero_split_txt text-sm  w-[100%]   mt-5'>The week-long event featured a spectacular opening night inaugurated by the Hon’ble Chief Minister Shri Devendra Fadnavis, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
+                        <p className='hero_split_txt text-sm  w-[100%]   mt-5'>The week-long event featured a spectacular opening night, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
                         <p className='hero_split_txt text-sm  w-[100%]   mt-5'>Visitors were treated to curated displays of rare and iconic photographs, offering a deep dive into Damodar Kamat’s visual legacy. Each image told a story, highlighting the artistry, craft, and cultural significance of Indian cinema from the 1950s to the 1980s.</p>
                         {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Opening Night (By Invitation)</p> */}
 
@@ -169,14 +173,14 @@ const Hero = () => {
 
                         <p className='   lg:text-2xl   hero_split_txt md:whitespace-nowrap '> Piramal NCPA Gallery, Nariman Point, Mumbai</p> */}
 
-                        <div className="hero_split_txt  mt-5 ">
+                        {/* <div className="hero_split_txt  mt-5 ">
                             <a href="#contact">
                                 <button className="relative text-[#020202]  overflow-hidden group 
                       border border-black uppercase  text-xs  lg:text-sm px-3 lg:px-5 py-1 lg:py-2 rounded-full
                      whitespace-nowrap transition-all duration-500 ease-[cubic-bezier(0.625,0.05,0,1)] 
                      hover:border-[#EB8529] hover:text-black">
 
-                                    <p className='translate-y-[2px]'>RSVP</p>
+                                    <p className='translate-y-[2px]'>Join the SDAF Community</p>
 
                                     <div className="w-full h-full z-[-1]  bg-[#EB8529] 
                     absolute top-[100%] left-0 
@@ -185,7 +189,7 @@ const Hero = () => {
                                     </div>
                                 </button>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
