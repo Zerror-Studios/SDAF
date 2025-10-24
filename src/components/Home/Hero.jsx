@@ -82,8 +82,8 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="w-full flex justify-between">
-                    <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[2%] text-lg text-left lg:w-[400px] leading-tight '>In September 2025, SDAF was proud to present Timeless Frames, a tribute to the pioneering photographer Damodar Kamat. The exhibition was a resounding success, celebrating a son of Maharashtra and unveiling a historic collection of unseen photographs.</p>
-                    <p className=' opacity-0 lg:opacity-100 text-end hero_para_1 mr-[2%] text-lg  lg:w-[400px] leading-tight '>A Look Back at Our Successful <br /> Inaugural Exhibition</p>
+                        <p className=' opacity-0 lg:opacity-100 hero_para_1 ml-[2%] text-lg text-left lg:w-[400px] leading-tight '>In September 2025, SDAF was proud to present Timeless Frames, a tribute to the pioneering photographer Damodar Kamat. The exhibition was a resounding success, celebrating a son of Maharashtra and unveiling a historic collection of unseen photographs.</p>
+                        <p className=' opacity-0 lg:opacity-100 text-end hero_para_1 mr-[2%] text-lg  lg:w-[400px] leading-tight '>A Look Back at Our Successful <br /> Inaugural Exhibition</p>
                     </div>
                     <h2 className=' hero_head_2 text-[11vw]   whitespace-nowrap translate-y-[-10vw] md:translate-y-[1vw]'>Timeless Frames</h2>
                 </div>
@@ -145,13 +145,13 @@ const Hero = () => {
 
             {/* /for mobile/ */}
             <div className="  lg:hidden  mb-[20vw] text-[#020202] px-[5.5vw] w-full  flex flex-col lg:flex-row lg:gap-20 ">
-                <div className=" w-full aspect-video my-[10vw]  center">
+                <div className=" w-full aspect-video my-7  md:my-[10vw] flex-col ">
+                    <h2 className=' hero_split_txt hero mb-5  leading-none text-3xl lg:text-5xl'>Event Highlights</h2>
                     <video loop autoPlay muted playsInline controls className=' hero_left_img   w-full aspect-video object-cover' src="/videos/hero_video.mp4" alt="Clip Image" />
                 </div>
                 <div className="w-full  h-full center">
                     <div className="">
-                        <h2 className=' hero_split_txt hero  leading-none text-[28px] lg:text-5xl'>Event Highlights</h2>
-                        <p className='hero_split_txt text-sm  w-[100%]   mt-5'>The week-long event featured a spectacular opening night, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
+                        <p className='hero_split_txt text-sm  w-[100%] '>The week-long event featured a spectacular opening night, two insightful walkthroughs with Neha Kamat, and a dedicated Student Day.</p>
                         <p className='hero_split_txt text-sm  w-[100%]   mt-5'>Visitors were treated to curated displays of rare and iconic photographs, offering a deep dive into Damodar Kamat’s visual legacy. Each image told a story, highlighting the artistry, craft, and cultural significance of Indian cinema from the 1950s to the 1980s.</p>
                         {/* <p className='  hero_split_txt md:whitespace-nowrap uppercase text-[#EB8529]  text-xs  lg:text-sm mt-5'>Opening Night (By Invitation)</p> */}
 

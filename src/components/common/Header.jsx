@@ -10,7 +10,6 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#the-series", label: "The Series" },
   { href: "#the-exhibition", label: "The Exhibition" },
-  { href: "#gallery", label: "Gallery" },
 ]
 
 const Header = () => {
@@ -69,17 +68,17 @@ const Header = () => {
               href={link.href}
               className="relative   overflow-hidden flex flex-col items-center"
             >
-              <h2 className=" anii text-3xl uppercase">{link.label}</h2>
+              <h2 className=" anii text-2xl uppercase">{link.label}</h2>
             </a>
           ))}
           <a
             onClick={closeMenu}
-            href="https://maps.app.goo.gl/fLQy21BRnGkxEJpb6"
+            href="#contact"
             target="_blank"
             rel="noopener noreferrer"
             className="relative   overflow-hidden flex flex-col items-center"
           >
-            <h2 className=" anii text-3xl uppercase">Location</h2>
+            <h2 className=" anii text-2xl uppercase">Join the community</h2>
           </a>
         </div>
       </div>
@@ -103,8 +102,8 @@ const Header = () => {
         </div>
         <div className=" lg:w-[25%] gap-2 flex items-center justify-end h-full ">
           <div className="flex items-center gap-2">
-            <a href="#contact">
-              <MainBtn txt="Join the SDAF Community" />
+            <a href="#contact" className='hidden md:block'>
+              <MainBtn txt="Join the Community" />
             </a>
             <RiMenuLine onClick={openMenu} className='lg:hidden' size={30} />
           </div>

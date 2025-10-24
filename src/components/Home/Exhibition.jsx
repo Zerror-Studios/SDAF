@@ -98,17 +98,17 @@ const Exhibition = () => {
                     </h2>
                 </div>
 
-                <div className="exhiv_slide_1   flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[450px]  left-1/2 -translate-x-1/2">
+                <div className="exhiv_slide_1   flex flex-col items-center gap-5 absolute text-center w-full px-[4vw] lg:px-0 lg:w-[450px]  left-1/2 -translate-x-1/2">
                     <h2 className='  text-3xl  lg:text-7xl z-[9] whitespace-nowrap'>The Art</h2>
                     <img className='w-full aspect-square object-cover ' src="/images/exhibition/kamat.webp" alt="GUIDE_1_KAMAT" />
                     <p className='w-full text-left leading-none text-sm lg:text-lg'>This striking photograph of Damodar Kamat offers a glimpse into the visual poetry that made his stills an enduring part of India’s cinematic memory.</p>
                 </div>
-                <div className="exhiv_slide_2    flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[450px]  left-1/2 -translate-x-1/2">
+                <div className="exhiv_slide_2    flex flex-col items-center gap-5 absolute text-center w-full px-[4vw] lg:px-0 lg:w-[450px]  left-1/2 -translate-x-1/2">
                     <h2 className='  text-3xl  lg:text-7xl whitespace-nowrap'>The Opening Night</h2>
                     <img className='w-full aspect-square object-cover' src="/images/exhibition/img2.jpeg" alt="MERA_NAAM_JOKER_1_KAMAT" />
                     <p className='w-full text-left leading-none text-sm lg:text-lg'>Highlights from the inauguration evening, capturing the excitement, interactions, and celebrations that marked the launch of Timeless Frames.</p>
                 </div>
-                <div className="exhiv_slide_3    flex flex-col items-center gap-5 absolute text-center w-[300px] lg:w-[450px]  left-1/2 -translate-x-1/2">
+                <div className="exhiv_slide_3    flex flex-col items-center gap-5 absolute text-center w-full px-[4vw] lg:px-0 lg:w-[450px]  left-1/2 -translate-x-1/2">
                     <h2 className='  text-3xl  lg:text-7xl whitespace-nowrap'>The Atmosphere</h2>
                     <img className='w-full aspect-square object-cover' src="/images/exhibition/img3.jpeg" alt="UMRAO_JAAN_1_KAMAT" />
                     <p className='w-full text-left leading-none text-sm lg:text-lg'>Capturing the gallery space, musical performances, and moments of guests engaging with the art, these images bring the vibrant atmosphere of Timeless Frames to life.</p>

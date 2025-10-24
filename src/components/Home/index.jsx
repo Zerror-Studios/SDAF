@@ -10,30 +10,20 @@ import AboutFoundation from "@/components/Home/AboutFoundation";
 import FocusSection from "@/components/Home/FocusSection";
 import GallerySlider from "@/components/Home/GallerySlider";
 import ContactForm from "@/components/Home/ContactForm";
-import MobileHero from "@/components/Home/MobileHero";
-import MobileVisionaries from "@/components/Home/MobileVisionaries";
 
 const Home = ({ meta }) => {
   return (
     <>
       <SeoHeader meta={meta} />
-      <div className=" hidden lg:block w-full">
-        <Hero />
-      </div>
-      <div className=" lg:hidden w-full">
-        <MobileHero />
+      <div className="w-full">
+      <Hero />
       </div>
       <AboutFoundation />
       <EnduringSection />
       <Exhibition />
       {/* <ManBehind /> */}
       {/* <CuratorVision /> */}
-      <div className=" hidden lg:block w-full">
-        <Visionaries />
-      </div>
-      <div className=" lg:hidden w-full">
-        <MobileVisionaries />
-      </div>
+      <Visionaries />
       <FocusSection />
       {/* <GallerySlider /> */}
       <ContactForm />
