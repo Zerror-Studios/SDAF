@@ -237,7 +237,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="w-full h-10 px-[4vw] my-5 border-t border-black/50 flex items-center lg:justify-end ">
-                <p className='text-sm text-black'>© 2025 SDAF. All rights reserved.</p>
+                <p className='text-sm text-black'>© {new Date().getFullYear()} SDAF. All rights reserved.</p>
             </div>
         </div>
     )

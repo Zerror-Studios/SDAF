@@ -2,6 +2,8 @@ import React from 'react'
 
 const Footer = () => {
 
+  const currentYear = new Date().getFullYear();
+
   const navLinks = [
     { href: "#the-series", label: "The Series" },
     { href: "#the-exhibition", label: "The Exhibition" },
@@ -34,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full h-10 mb-5 border-t border-black/50 flex items-center justify-between ">
-          <p className='text-sm text-black'>© 2025 SDAF. All rights reserved.</p>
+          <p className='text-sm text-black'>© {currentYear} SDAF. All rights reserved.</p>
           <div className="flex space-x-4">
           </div>
         </div>
