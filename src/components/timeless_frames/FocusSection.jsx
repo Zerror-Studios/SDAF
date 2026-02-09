@@ -4,6 +4,7 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 import SplitType from "split-type";
+import { useGSAP } from '@gsap/react';
 
 
 const images = [
@@ -24,7 +25,7 @@ const images = [
 
 const FocusSection = () => {
 
-  useEffect(() => {
+  useGSAP(() => {
     // ✅ Grid configuration depending on screen size
     let gridConfig = [4, 3];
     if (window.innerWidth < 768) {
@@ -163,8 +164,7 @@ const FocusSection = () => {
         },
       }, "parr"
     );
-  }, []);
-
+  });
 
   return (
     <div id='focus'>

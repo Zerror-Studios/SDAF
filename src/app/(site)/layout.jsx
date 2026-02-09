@@ -30,7 +30,7 @@ export default function SiteLayout({ children }) {
 
 
   return (
-    // <ViewTransitions routeKey={pathname}>
+    <ViewTransitions routeKey={pathname}>
     <LenisScroll>
       <div className="page-root">
         <Header />
@@ -39,6 +39,6 @@ export default function SiteLayout({ children }) {
         <ContactForm />
       </div>
     </LenisScroll>
-    //  </ViewTransitions>
+ </ViewTransitions>
   );
 }

@@ -1,13 +1,30 @@
 "use client";
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 import SplitType from "split-type";
+import { RiVolumeMuteLine, RiVolumeUpLine } from '@remixicon/react';
+import { useGSAP } from '@gsap/react';
 
 const Visionaries = () => {
 
-    useEffect(() => {
+    const videoRefs = useRef([])
+    const [mutedStates, setMutedStates] = useState([true, true, true])
+
+    const toggleMute = (index) => {
+        setMutedStates(prev => {
+            const updated = prev.map((_, i) => i !== index)
+
+            videoRefs.current.forEach((video, i) => {
+                if (video) video.muted = i !== index
+            })
+
+            return updated
+        })
+    }
+
+    useGSAP(() => {
 
         var tl = gsap.timeline({
             scrollTrigger: {
@@ -48,7 +65,7 @@ const Visionaries = () => {
         }
 
 
-    }, [])
+    })
 
 
     return (
@@ -59,9 +76,15 @@ const Visionaries = () => {
                 </div>
                 <div className=" vision_imgs  w-full h-full absolute  grid grid-rows-3 lg:grid-rows-none  lg:grid-cols-[30%_40%_30%]">
                     <div className=" vision_img_1 translate-y-[20vw] lg:translate-y-0 translate-x-[-10vw] lg:translate-x-0 origin-center flex flex-col  justify-center items-end w-full gap-2 text-center ">
-                        <div className=" w-[50%] md:w-[35%]  lg:w-[55%] ">
-                            <video loop autoPlay playsInline muted controls className='aspect-[3/4] object-cover ' src="/videos/spok2.mp4" alt="loading" />
+                        <div className=" relative w-[50%] md:w-[35%]  lg:w-[55%] ">
+                            <video ref={el => (videoRefs.current[0] = el)} loop autoPlay playsInline muted className='aspect-[3/4] object-cover ' src="/videos/spok2.mp4" alt="loading" />
 
+                            <button
+                                onClick={() => toggleMute(0)}
+                                className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
+                            >
+                                {mutedStates[0] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                            </button>
                         </div>
                         <div className="w-[50%] md:w-[35%]  lg:w-[55%]">
                             {/* <p className='w-full text-left text-xs lg:text-sm  leading-none'>“From studio file to museum wall—every still is light, craft, and history.”</p> */}
@@ -71,8 +94,15 @@ const Visionaries = () => {
                         </div>
                     </div>
                     <div className=" vision_img_2 origin-center flex flex-col justify-center  items-center w-full gap-2  text-center ">
-                        <div className=" w-[85%] md:w-[50%] lg:w-[70%]  ">
-                            <video loop autoPlay playsInline muted controls className=' aspect-[3/4] object-cover object-right ' src="/videos/spok1.mp4" alt="loading" />
+                        <div className=" relative w-[85%] md:w-[50%] lg:w-[70%]  ">
+                            <video ref={el => (videoRefs.current[1] = el)} loop autoPlay playsInline muted className=' aspect-[3/4] object-cover object-right ' src="/videos/spok1.mp4" alt="loading" />
+
+                            <button
+                                onClick={() => toggleMute(1)}
+                                className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
+                            >
+                                {mutedStates[1] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                            </button>
                         </div>
                         <div className=" w-[85%] md:w-[50%] lg:w-[70%] ">
                             {/* <p className='w-full text-left text-sm lg:text-lg leading-none'>“Preservation is only half the job; the other half is public access.”</p> */}
@@ -82,8 +112,15 @@ const Visionaries = () => {
                         </div>
                     </div>
                     <div className="  vision_img_3  translate-y-[-20vw]  lg:translate-y-0 translate-x-[10vw]  lg:translate-x-0 origin-center  flex flex-col justify-center  items-start w-full gap-2  text-center ">
-                        <div className="w-[50%] md:w-[35%]  lg:w-[55%] ">
-                            <video loop autoPlay playsInline muted controls className=' aspect-[3/4] object-cover  ' src="/videos/spok3.mp4" alt="loading" />
+                        <div className=" relative w-[50%] md:w-[35%]  lg:w-[55%] ">
+
+                            <button
+                                onClick={() => toggleMute(2)}
+                                className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
+                            >
+                                {mutedStates[2] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                            </button>
+                            <video ref={el => (videoRefs.current[2] = el)} loop autoPlay playsInline muted className=' aspect-[3/4] object-cover  ' src="/videos/spok3.mp4" alt="loading" />
                         </div>
                         <div className="w-[50%] md:w-[35%]  lg:w-[55%]">
                             {/* <p className='w-full text-left text-xs lg:text-sm  leading-none'>“Archives aren’t nostalgia—they’re raw material for new imagination.”</p> */}

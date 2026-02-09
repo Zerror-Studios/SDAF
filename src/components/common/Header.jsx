@@ -6,20 +6,13 @@ import gsap from 'gsap'
 import CustomEase from 'gsap/dist/CustomEase'
 import { navLinks } from '../helpers/Links';
 import { usePathname } from 'next/navigation';
+import { Link } from 'next-view-transitions';
 gsap.registerPlugin(CustomEase);
 
 
 const Header = () => {
 
   const pathname = usePathname()
-    const [introDone, setIntroDone] = useState(false)
-
-  useEffect(() => {
-    const hasSeenIntro = sessionStorage.getItem("sdaf_intro_seen")
-    setIntroDone(!!hasSeenIntro)
-  }, [])
-   const hideLogo =
-    pathname === "/" && !introDone
 
   CustomEase.create("art-details", "0.65, 0.01, 0.05, 0.99")
 
@@ -100,7 +93,7 @@ const Header = () => {
       <div className=" nav w-full h-16  absolute    lg:fixed top-0 left-0 z-[999] px-[4vw] flex items-center justify-between">
         <div className=" w-[5.2rem] hidden lg:flex whitespace-nowrap  uppercase text-sm items-center h-full gap-5">
           {navLinks.map((link, i) => (
-            <a
+            <Link
               key={i}
               href={link.href}
               className="block group  w-fit  relative cursor-pointer  transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]"
@@ -115,7 +108,7 @@ const Header = () => {
                   </span>
                 </span>
               )}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="w-[50%]  flex  lg:justify-center ">
@@ -124,7 +117,7 @@ const Header = () => {
           src="/logo/SDAF black.png"
           alt="logo_black"
           className={`w-full translate-y-[.75vw] transition-opacity duration-500
-            ${hideLogo ? "lg:opacity-0" : "lg:opacity-100"}`}
+            ${pathname === "/" ? "lg:opacity-0" : "lg:opacity-100"}`}
         />
       </a>
         </div>

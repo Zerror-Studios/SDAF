@@ -8,8 +8,22 @@ export default function LenisScroll({ children }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (lenis.current) lenis.current.scrollTo(0, { immediate: true });
+    if (!lenis.current) return;
+
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        lenis.current.scrollTo(0, { immediate: true });
+        window.scrollTo(0, 0); // hard reset fallback
+      }, 50);
+    });
   }, [pathname]);
+
+
+  useEffect(() => {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+  }, []);
 
   useEffect(() => {
     if (typeof window === "undefined") return;

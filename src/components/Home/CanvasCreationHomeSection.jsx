@@ -1,11 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
 import MainBtn from "../buttons/MainBtn"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { Link } from "next-view-transitions"
 gsap.registerPlugin(ScrollTrigger)
 
 export default function CanvasCreationUnique() {
@@ -68,12 +68,12 @@ export default function CanvasCreationUnique() {
                     </p>
 
                     {/* CTA */}
-                    <a
+                    <Link
                         href="/canvas-and-creation"
                         className=""
                     >
                         <MainBtn txt="Learn More" />
-                    </a>
+                    </Link>
                 </div>
             </div>
 

@@ -21,12 +21,12 @@ const TimelessFramesHomeSection = () => {
                 <p className=" mb-4 md:mb-6   text-sm lg:text-lg  opacity-80 ">
                     The week-long event brought rare photographs from the 1950s–1980s to public view for the first time — celebrating a son of Maharashtra and an unsung hero of Indian cinema.
                 </p>
-                <a
+                <Link
                     href="/timeless-frames"
                     className=""
                 >
                     <MainBtn txt="View Exhibition Archive " />
-                </a>
+                </Link>
             </div>
         </div>
     )

@@ -105,15 +105,15 @@ const IntroLoader = () => {
 
                 <div className="slide_up w-full  h-[calc(100vh-148px)] absolute z-[-1] bg-[#ECE7D9] left-0"></div>
                 <div className="slide_down w-full  h-[148px] bottom-0 absolute z-[-1] bg-[#ECE7D9] right-0"></div>
-                <div className="ver_line origin-top absolute h-[2px] z-[99] w-[0%] bg-[#020202] left-1/2 -translate-x-1/2 bottom-[143px]"></div>
+                <div className="ver_line origin-top absolute h-[2px] z-[99] w-[0%] bg-[#020202] left-1/2 -translate-x-1/2 bottom-[148px]"></div>
 
-                <div className="loader_paren absolute bottom-28 gap-3 w-full flex-col center">
+                <div className="loader_paren absolute bottom-[148px] gap-3 w-full flex-col center">
                     <div className="relative w-[30%] overflow-hidden rounded-full h-[2px] bg-black/20">
                         <div className="loader_line absolute top-0 left-0 w-0 h-full bg-[#020202]"></div>
                     </div>
-                    <div className="w-full center">
-                        <p>{progress < 10 ? `0${progress}` : progress} %</p>
-                    </div>
+                </div>
+                <div className=" loader_paren w-full absolute bottom-24 center">
+                    <p>{progress < 10 ? `0${progress}` : progress} %</p>
                 </div>
             </div>
         </>

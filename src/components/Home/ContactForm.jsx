@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import MainBtn from '../buttons/MainBtn';
 import { toast, ToastContainer } from 'react-toastify';
 import { navLinks } from '../helpers/Links';
+import { Link } from 'next-view-transitions';
 
 
 const ContactForm = () => {
@@ -211,9 +212,9 @@ const ContactForm = () => {
                             {
                                 navLinks.map((link, i) => (
                                     <p key={i} className='block group text-sm overflow-hidden relative cursor-pointer hover:opacity-60 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]'>
-                                        <a href={link.href}>
+                                        <Link href={link.href}>
                                             {link.label}
-                                        </a>
+                                        </Link>
                                         <span className="w-full h-[1px] bg-black absolute bottom-0.5 left-[-100%] group-hover:left-0 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)] rounded-full"></span>
                                     </p>
                                 ))

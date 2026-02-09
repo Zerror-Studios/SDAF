@@ -1,14 +1,25 @@
 "use client";
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 import SplitType from "split-type";
+import { RiVolumeMuteLine, RiVolumeUpLine } from '@remixicon/react';
+import { useGSAP } from '@gsap/react';
 
 const EnduringSection = () => {
 
+    const videoRef = useRef(null)
+    const [muted, setMuted] = useState(true)
 
-    useEffect(() => {
+    const toggleMute = () => {
+        if (!videoRef.current) return
+        videoRef.current.muted = !muted
+        setMuted(!muted)
+    }
+
+
+    useGSAP(() => {
 
         if (window.innerWidth < 1024) return
 
@@ -74,13 +85,13 @@ const EnduringSection = () => {
             delay: 0.4
         }, "par2")
 
-    }, [])
+    })
 
 
 
 
     return (
-        <div id='the-series' className='py-[10vw] pt-[25vw] lg:pt-[15vw] overflow-hidden px-[4vw] lg:px-0 w-full '>
+        <div id='the-series' className=' lg:pt-[15vw] overflow-hidden px-[4vw] lg:px-0 w-full '>
             <div className=" lg:h-[100vh]  enduring_paren  w-full   center">
                 <div className=" w-full lg:w-[70%] h-full  center flex-col">
 
@@ -112,7 +123,7 @@ const EnduringSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="  enduring_desc  w-full pt-[20vw] md:pt-[10vw] lg:pt-[5vw]   center">
+            <div className="  enduring_desc  w-full pt-12 md:pt-[10vw] lg:pt-[5vw]   center">
                 <div className=" w-full lg:w-[70%]   flex flex-col lg:flex-row items-center justify-between">
                     <div className=" lg:hidden w-full lg:w-1/2 translate-y-[1vw]  text-3xl  md:text-[3.7vw] leading-tight">
                         <h2 className='split_head_1'>Honouring the Unsung Heroes of Indian Culture</h2>
@@ -133,6 +144,24 @@ const EnduringSection = () => {
                         <p className='split_para_2   '>
                             The journey to celebrate India's unsung heroes has just begun. Stay tuned for announcements on Edition 2 of the Enduring Legacies series.</p>
                     </div>
+                </div>
+            </div>
+            <div className="w-full hidden lg:flex  center">
+
+                <div className=" mt-12 hidden lg:flex relative aspect-video w-[80%]">
+                    <video ref={videoRef} loop autoPlay muted playsInline className='cover' src="/videos/hero_video.mp4" alt="Clip Image" />
+                    <button
+                        onClick={toggleMute}
+                        className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full  "
+                        aria-label={muted ? "Unmute video" : "Mute video"}
+                    >
+                        {muted ? (
+                            <RiVolumeMuteLine size={16} className="text-black" />
+                        ) : (
+                            <RiVolumeUpLine size={16} className="text-black" />
+                        )}
+                    </button>
+
                 </div>
             </div>
         </div>

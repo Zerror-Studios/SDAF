@@ -4,10 +4,11 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 import SplitType from "split-type";
+import { useGSAP } from '@gsap/react';
 
 const Exhibition = () => {
 
-    useEffect(() => {
+    useGSAP(() => {
 
         var tl = gsap.timeline({
             scrollTrigger: {
@@ -78,7 +79,7 @@ const Exhibition = () => {
             delay: 3
         }, "pa")
 
-    }, [])
+    })
 
 
     return (
