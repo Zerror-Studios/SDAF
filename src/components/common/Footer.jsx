@@ -1,24 +1,19 @@
+"use client";
 import React from 'react'
+import { navLinks } from '../helpers/Links';
 
 const Footer = () => {
 
   const currentYear = new Date().getFullYear();
 
-  const navLinks = [
-    { href: "#the-series", label: "The Series" },
-    { href: "#the-exhibition", label: "The Exhibition" },
-    { href: "#about", label: "About" },
-    { href: "#gallery", label: "Gallery" },
-  ]
-
   return (
     <div>
-      <div className=" w-full  px-[4vw]  ">
+      <div className=" w-full   px-[4vw]  ">
         <div className="w-full h-[30vh] flex">
           <div className="w-1/2 h-full flex items-center">
-          <a href="#hero" className='h-[30%] lg:h-[50%]'>
-            <img className=' w-[80%]  md:w-[40%] ' src="/logo/SDAF black.png" alt="logo_black" />
-          </a>
+            <a href="#hero" className='h-[30%] lg:h-[50%]'>
+              <img className=' w-[80%]  md:w-[40%] ' src="/logo/SDAF black.png" alt="logo_black" />
+            </a>
           </div>
 
           <div className="w-1/2 h-full uppercase flex flex-col justify-center items-end">

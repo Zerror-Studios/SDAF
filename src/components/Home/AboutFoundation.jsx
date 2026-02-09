@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
@@ -6,34 +7,6 @@ import SplitType from "split-type";
 
 
 const AboutFoundation = () => {
-
-    useEffect(() => {
-
-        var tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".foundation_parent",
-                start: "top 70%",
-                end: "bottom 70%",
-                scrub: true,
-                anticipatePin: 1,
-                // markers: true,
-            }
-        })
-
-
-        tl.to(".found_clip_div_2", {
-            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-        }, "par2")
-        tl.to(".found_clip_div_1", {
-            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-            delay: 0.1
-        }, "par2")
-        tl.to(".found_clip_div_3", {
-            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-            delay: 0.3
-        }, "par2")
-
-    }, [])
 
     return (
         <div id='about' className=' pt-[8vw]'>
@@ -45,7 +18,6 @@ const AboutFoundation = () => {
                     </div>
 
                     <div
-                        style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                         className="  found_clip_div_1 translate-y-[5vw] row-start-2 col-span-3">
                         <img src="/images/art foundation/img4.jpeg" alt="SATYAM_SHIVAM_SUNDARAM_WORKING_1_KAMAT" />
                     </div>
@@ -59,13 +31,11 @@ const AboutFoundation = () => {
                     </div>
 
                     <div
-                        style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                         className=" found_clip_div_2 lg:translate-y-[-5vw]   lg:col-start-10 col-span-3">
                         <img src="/images/art foundation/img2.jpeg" alt="TeesriManzil 3" />
                     </div>
 
                     <div
-                        style={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
                         className="  found_clip_div_3 h-[30vw] lg:col-start-6 col-span-5">
                         <img src="/images/art foundation/img3.jpeg" alt="SHRI_420_2_KAMAT" />
                     </div>

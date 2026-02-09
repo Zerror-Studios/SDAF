@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import CustomEase from "gsap/dist/CustomEase";

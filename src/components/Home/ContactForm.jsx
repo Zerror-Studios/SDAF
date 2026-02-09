@@ -1,16 +1,11 @@
+"use client";
 import { RiCheckLine } from '@remixicon/react';
 import React, { useState } from 'react'
 import MainBtn from '../buttons/MainBtn';
 import { toast, ToastContainer } from 'react-toastify';
+import { navLinks } from '../helpers/Links';
 
 
-  const navLinks = [
-    { href: "#the-series", label: "The Series" },
-    { href: "#the-exhibition", label: "The Exhibition" },
-    { href: "#about", label: "About" },
-    { href: "#gallery", label: "Gallery" },
-  ]
-  
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         fullName: "",
@@ -74,8 +69,8 @@ const ContactForm = () => {
             <div className="w-full items-stretch pt-[8vw]  bg_img flex flex-col  lg:flex-row  ">
                 <div className=" w-full lg:w-1/2 h-full px-[4vw]">
                     <div className="">
-                        <h2 className=' text-3xl lg:text-5xl'>Join the SDAF Community</h2>
-                        <p className=' text-sm lg:text-base leading-none  mt-3   '>Be the first to know about future Enduring Legacies exhibitions and other SDAF initiatives.</p>
+                        <h2 className=' text-3xl  lg:text-[4.5vw] leading-none'>Stay Connected</h2>
+                        <p className=' text-sm lg:text-base leading-none  mt-3   '>Be the first to know about upcoming Enduring Legacies editions and other SDAF initiatives.</p>
                         <div className="w-full">
                             <form onSubmit={handleSubmit} method='POST' className="mt-6 space-y-6">
                                 {/* Full Name */}
@@ -198,16 +193,16 @@ const ContactForm = () => {
                                 </label>
 
                                 {/* Submit */}
-                                <div>
+                                <>
                                     <MainBtn txt={loading ? "Submitting..." : "Submit"} disabled={loading} />
-                                </div>
+                                </>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div className=" w-full lg:w-1/2 px-[4vw] flex lg:items-end  ">
+                <div className=" pt-6 lg:pt-0 w-full lg:w-1/2 px-[4vw] flex lg:items-end  ">
                     <div className=" w-full flex lg:flex-col items-end justify-between">
-                        <div className=" w-[45%] lg:w-full lg:flex  lg:items-end lg:justify-end">
+                        <div className=" w-[45%] md:w-[25%] lg:w-full lg:flex  lg:items-end lg:justify-end">
                             <a href="#hero" className=' w-full lg:w-[40%]'>
                                 <img className=' w-full ' src="/logo/SDAF black.png" alt="logo_black" />
                             </a>

@@ -1,18 +1,22 @@
 @font-face {
-  font-family: 'pp_reg';
+  font-family: "pp_reg";
   src: url(../../public/fonts/nexa-regular.ttf);
 }
 @font-face {
-  font-family: 'ivy_thin';
+  font-family: "ivy_thin";
   src: url(../../public/fonts/SFT-Schrifted-Serif-TRIAL-Display-Light-BF664ebf5e38e21.otf);
 }
 
 @import "tailwindcss";
 
-*{
-  scroll-behavior: smooth ;
+* {
+  scroll-behavior: smooth;
 }
-
+@media (min-width: 1024px) {
+:root{
+  font-size: 1vw;
+}
+}
 body {
   overflow-x: hidden;
   width: 100%;
@@ -22,27 +26,37 @@ body {
   background-size: contain;
   /* background-color:#020202 */
 }
-.bg_img{
+.bg_img {
   background-image: url(../../public/images/paperboard-texture_compress.webp);
   background-size: contain;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hover-orange:hover {
-  filter: brightness(0) saturate(100%) invert(43%) sepia(100%) saturate(748%) hue-rotate(360deg) brightness(100%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(43%) sepia(100%) saturate(748%)
+    hue-rotate(360deg) brightness(100%) contrast(101%);
 }
 
-
-p {
+p,
+span,
+li,
+input,
+button,
+a {
   font-family: pp_reg;
 }
-h2{
-  font-family:ivy_thin; 
+h2 {
+  font-family: ivy_thin;
 }
-.ivy_thin{
-  font-family:ivy_thin; 
+.ivy_thin {
+  font-family: ivy_thin;
 }
 .scroller_none::-webkit-scrollbar {
   display: none;
@@ -57,7 +71,8 @@ button {
   justify-content: center;
 }
 
-@media (min-width: 1024px) {  /* Tailwind's lg breakpoint */
+@media (min-width: 1024px) {
+  /* Tailwind's lg breakpoint */
   .clip-on-laptop {
     clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
   }
