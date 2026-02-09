@@ -4,7 +4,7 @@ import { Link } from 'next-view-transitions'
 
 const TimelessFramesHomeSection = () => {
     return (
-        <div className=' px-[4vw] w-full mt-14 lg:mt-20 flex flex-col md:items-center justify-center md:text-center'>
+        <div id='timeless_frames' className=' px-[4vw] w-full mt-12 lg:mt-20 flex flex-col md:items-center justify-center md:text-center'>
             <h2 className='  uppercase text-[#EB8529] text-sm font-semibold lg:text-xl'>Enduring Legacies | Edition 1</h2>
             <h2 className=" text-3xl  lg:text-[4.5vw] leading-none">
                 Timeless frames
@@ -15,10 +15,10 @@ const TimelessFramesHomeSection = () => {
             </div>
 
             <div className=" md:w-[70%] lg:w-[50%] flex flex-col md:items-center">
-                <p className="mb-6   text-sm lg:text-lg  opacity-80 ">
+                <p className=" mb-2 md:mb-6   text-sm lg:text-lg  opacity-80 ">
                     In September 2025, SDAF presented its inaugural exhibition: a tribute to the pioneering cinema photographer Damodar Kamat.
                 </p>
-                <p className="mb-6   text-sm lg:text-lg  opacity-80 ">
+                <p className=" mb-4 md:mb-6   text-sm lg:text-lg  opacity-80 ">
                     The week-long event brought rare photographs from the 1950s–1980s to public view for the first time — celebrating a son of Maharashtra and an unsung hero of Indian cinema.
                 </p>
                 <a

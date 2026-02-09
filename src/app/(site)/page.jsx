@@ -6,6 +6,7 @@ import AboutFoundation from "@/components/Home/AboutFoundation";
 import ContactForm from "@/components/Home/ContactForm";
 import CanvasCreationHomeSection from "@/components/Home/CanvasCreationHomeSection";
 import TimelessFramesHomeSection from "@/components/Home/TimelessFramesHomeSection";
+import IntroLoaderGate from "@/components/utils/IntroLoaderGate";
 
 export const metadata = {
   title: "SDAF | Shivdutt Das Art Foundation — Art Belongs to Everyone",
@@ -54,7 +55,7 @@ export default function HomePage() {
       />
 
 
-      {/* <IntroLoader /> */}
+     <IntroLoaderGate />
 
       <Hero />
 

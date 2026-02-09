@@ -66,7 +66,7 @@ const ContactForm = () => {
     return (
         <div id='contact'>
             <ToastContainer />
-            <div className="w-full items-stretch pt-[8vw]  bg_img flex flex-col  lg:flex-row  ">
+            <div className="w-full items-stretch mt-12 lg:mt-20 bg_img flex flex-col  lg:flex-row  ">
                 <div className=" w-full lg:w-1/2 h-full px-[4vw]">
                     <div className="">
                         <h2 className=' text-3xl  lg:text-[4.5vw] leading-none'>Stay Connected</h2>
@@ -78,7 +78,7 @@ const ContactForm = () => {
                                     <input
                                         type="text"
                                         placeholder="Full Name"
-                                        className="border-b w-full text-lg outline-none"
+                                        className="border-b w-full text-base lg:text-lg outline-none"
                                         value={formData.fullName}
                                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                                     />
@@ -92,7 +92,7 @@ const ContactForm = () => {
                                         <input
                                             type="email"
                                             placeholder="Email"
-                                            className="border-b w-full text-lg outline-none"
+                                            className="border-b w-full text-base lg:text-lg outline-none"
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                         />
@@ -103,7 +103,7 @@ const ContactForm = () => {
                                         <input
                                             type="text"
                                             placeholder="Phone"
-                                            className="border-b w-full  text-lg outline-none"
+                                            className="border-b w-full  text-base lg:text-lg outline-none"
                                             value={formData.phone}
                                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                         />

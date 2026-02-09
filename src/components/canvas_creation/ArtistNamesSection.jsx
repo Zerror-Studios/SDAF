@@ -4,112 +4,112 @@ import React, { useState } from 'react'
 const artists = [
         {
         name: "Murali Nagapuzha",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Chennai",
         specialty: "Nature-centric naïve art",
         achievements: "Pollock-Krasner Grant",
     },
     {
         name: "Nilisha Phad",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Mumbai",
         specialty: "Portraiture",
         achievements: "Elizabeth Greenshields Grant (2x)",
     },
     {
         name: "Ghanshyam Gupta",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Mumbai",
         specialty: "Optical illusion art",
         achievements: "RCA London trained",
     },
     {
         name: "Nilesh Vede",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Mumbai",
         specialty: "Sculpture",
         achievements: "2025 Lalit Kala Akademi National Award",
     },
     {
         name: "Ravi Chaurasiya",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Delhi",
         specialty: "Interdisciplinary — painting, installation, video",
         achievements: null,
     },
     {
         name: "Ankur Rana",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Delhi",
         specialty: "Oil painting, figurative works",
         achievements: "11 solo shows",
     },
     {
         name: "Monica Ghule",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Mumbai",
         specialty: "Painting & graphics",
         achievements: "Bendre-Husain Scholar",
     },
     {
         name: "Manojkumar Sakale",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Mumbai",
         specialty: "Portrait artist, watercolor, village characters",
         achievements: null,
     },
     {
         name: "Sachin Sagare",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Sawantwadi",
         specialty: "Rural Maharashtra themes, village life",
         achievements: null,
     },
     {
         name: "Kandi Narsimlu",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Hyderabad",
         specialty: "Folk/rural Telangana themes",
         achievements: null,
     },
     {
         name: "Jhon Douglas",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Thane",
         specialty: "Contemporary figurative works",
         achievements: null,
     },
     {
         name: "Renuka Douglas",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Thane",
         specialty: "Contemporary painting",
         achievements: null,
     },
     {
         name: "Ramchandra Kharatmal",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Pune",
         specialty: "Traditional and contemporary painting",
         achievements: null,
     },
     {
         name: "Varsha Kharatmal",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Pune",
         specialty: "Contemporary Indian art",
         achievements: null,
     },
     {
         name: "Sharvari Luth",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Nashik",
         specialty: "Contemporary painting",
         achievements: null,
     },
     {
         name: "Anant Mandala",
-        img: "/images/canvas_and_creation/dummy_pic.png",
+        img: "https://static.vecteezy.com/system/resources/previews/051/156/271/large_2x/faceless-user-flat-avatar-profile-placeholder-anonymous-user-male-no-photo-web-template-default-user-picture-sign-profile-male-symbol-vector.jpg",
         city: "Mumbai",
         specialty: "Contemporary art practice",
         achievements: null,
@@ -139,7 +139,7 @@ export default function ArtistNamesSection() {
 
                 </div>
                 {/* Artist Grid */}
-                <div className=" mt-8 lg:mt-14 grid grid-cols-2 gap-3 lg:gap-6 sm:grid-cols-3 md:grid-cols-4">
+                <div className=" mt-5 lg:mt-14 grid grid-cols-2 gap-3 lg:gap-6 sm:grid-cols-3 md:grid-cols-4">
 
                     {artists.map((artist, index) => {
                         const isActive = activeIndex === index;
@@ -173,7 +173,7 @@ export default function ArtistNamesSection() {
 
                                     {/* Name + City */}
                                     <div className="lg:p-4">
-                                        <h2 className=" text-xl lg:text-3xl font-medium ">
+                                        <h2 className=" text-xl lg:text-3xl leading-none  mt-2 ">
                                             {artist.name}
                                         </h2>
                                         <p className=" max-sm:text-sm opacity-80 ">

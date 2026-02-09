@@ -46,7 +46,7 @@ const AboutFoundation = () => {
 
             {/* ////mobile//// */}
             <div className=" w-full lg:hidden    px-[4vw]">
-                <div className="w-full h-full  center flex-col gap-10">
+                <div className="w-full h-full  center flex-col gap-5">
 
                     <div className="w-full">
                         <h2 className=' text-3xl  lg:text-[4.5vw] leading-none'>The Shivdutt Das Art Foundation</h2>

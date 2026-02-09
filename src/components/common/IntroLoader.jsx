@@ -103,9 +103,9 @@ const IntroLoader = () => {
             </a>
             <div className="loader_wrapper pointer-events-none w-full h-screen fixed z-[9999] top-0 left-0  ">
 
-                <div className="ver_line origin-top absolute h-[2px] z-[99] w-[0%] bg-[#020202] left-1/2 -translate-x-1/2 bottom-[148px]"></div>
                 <div className="slide_up w-full  h-[calc(100vh-148px)] absolute z-[-1] bg-[#ECE7D9] left-0"></div>
                 <div className="slide_down w-full  h-[148px] bottom-0 absolute z-[-1] bg-[#ECE7D9] right-0"></div>
+                <div className="ver_line origin-top absolute h-[2px] z-[99] w-[0%] bg-[#020202] left-1/2 -translate-x-1/2 bottom-[143px]"></div>
 
                 <div className="loader_paren absolute bottom-28 gap-3 w-full flex-col center">
                     <div className="relative w-[30%] overflow-hidden rounded-full h-[2px] bg-black/20">

@@ -31,7 +31,7 @@ export default function CanvasCreationUnique() {
     })
 
     return (
-        <div className=" max-lg:mt-14 canvas_creation_sec relative w-full overflow-hidden  flex flex-col md:flex-row items-stretch  md:gap-x-10 lg:gap-x-44  px-[4vw] ">
+        <div id="canvas_and_creation" className=" max-lg:mt-12 canvas_creation_sec relative w-full overflow-hidden  flex flex-col md:flex-row items-stretch  md:gap-x-10 lg:gap-x-44  px-[4vw] ">
 
             {/* Canvas Text Block */}
             <div className=" w-full md:w-1/2  flex justify-center flex-col relative">
@@ -41,29 +41,29 @@ export default function CanvasCreationUnique() {
                 <h2 className=" max-sm:hidden text-3xl  lg:text-[4.5vw] leading-none">
                     Canvas <br /> & Creation
                 </h2>
-                <h2 className=" md:hidden text-3xl mb-2 mt-5  lg:text-[4.5vw] leading-none">
+                <h2 className=" md:hidden text-3xl mb-2 mt-2  lg:text-[4.5vw] leading-none">
                     Canvas & Creation
                 </h2>
-                <p className="mb-6 text-xs lg:text-lg   uppercase  ">
+                <p className=" mb-2  md:mb-6 text-xs lg:text-lg   uppercase  ">
                     An SDAF Art Camp
                 </p>
-                <div className=" md:mt-8 ">
+                <div className=" mt-4 md:mt-8 ">
 
-                    <p className="mb-6   text-sm lg:text-lg  opacity-80 ">
+                    <p className=" mb-2  md:mb-6   text-sm lg:text-lg  opacity-80 ">
                         Sixteen artists. Three days. One purpose: to create.
                     </p>
 
-                    <p className="mb-6   text-sm lg:text-lg  opacity-80 ">
+                    <p className=" mb-2  md:mb-6   text-sm lg:text-lg  opacity-80 ">
                         In February 2026, SDAF brings together 16 of India’s most compelling
                         artists at Della Resorts, Lonavala — for three days of uninterrupted creation.
                     </p>
 
-                    <p className="mb-6   text-sm lg:text-lg  opacity-80 ">
+                    <p className=" mb-2  md:mb-6   text-sm lg:text-lg  opacity-80 ">
                         No briefs. No commissions. No constraints. Just time, space, and the
                         company of fellow creators.
                     </p>
 
-                    <p className="mb-10   text-sm lg:text-lg  opacity-80 ">
+                    <p className=" mb-4  md:mb-10   text-sm lg:text-lg  opacity-80 ">
                         The works produced will join the SDAF collection.
                     </p>
 
