@@ -96,7 +96,7 @@ const IntroLoader = () => {
         <>
             <a href="#hero">
                 <img
-                    className="logo_img fixed w-[50%] md:w-[25%] z-[99999] -translate-x-1/2 left-1/2 top-[40vh]"
+                    className="logo_img hidden lg:block fixed w-[50%] md:w-[25%] z-[99999] -translate-x-1/2 left-1/2 top-[40vh]"
                     src="/logo/SDAF black.png"
                     alt="logo"
                 />

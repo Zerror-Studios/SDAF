@@ -16,7 +16,6 @@ const Header = () => {
 
   CustomEase.create("art-details", "0.65, 0.01, 0.05, 0.99")
 
-
   const openMenu = () => {
     if (window.lenis) window.lenis.stop()
     gsap.to(".open_menu", {
@@ -58,12 +57,12 @@ const Header = () => {
 
       <div
         // style={{clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"}}
-        className=" open_menu   right-[-100%] w-full h-[100dvh] bg-[#ECE7D9] text-[#020202] p-5 fixed z-[99999]">
+        className=" open_menu   right-[-100%] w-full h-[100dvh] bg-[#ECE7D9] text-[#020202] p-5 fixed z-[9999999]">
 
         <div className="w-[50%] absolute  flex lg:justify-center ">
-          <a href="/" className='w-[50%] md:w-[35%] lg:w-[25%]'>
+          <Link href="/" className='w-[50%] md:w-[35%] lg:w-[25%]'>
             <img className=' w-full  lg:opacity-100 translate-y-[1vw]' src="/logo/SDAF black.png" alt="logo_black" />
-          </a>
+          </Link>
         </div>
 
         <a onClick={closeMenu} href="#contact" className=' absolute w-fit block overflow-hidden bottom-20 left-1/2 -translate-x-1/2'>
@@ -78,14 +77,14 @@ const Header = () => {
         </div>
         <div className="w-full h-full center flex-col gap-5">
           {navLinks.map((link, i) => (
-            <a
+            <Link
               onClick={closeMenu}
               key={link.label}
               href={link.href}
               className="relative   overflow-hidden flex flex-col items-center"
             >
               <h2 className=" anii text-2xl uppercase">{link.label}</h2>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -112,14 +111,14 @@ const Header = () => {
           ))}
         </div>
         <div className="w-[50%]  flex  lg:justify-center ">
-        <a href="/" className="w-[50%] md:w-[35%] lg:w-[18%]">
-        <img
-          src="/logo/SDAF black.png"
-          alt="logo_black"
-          className={`w-full translate-y-[.75vw] transition-opacity duration-500
+          <a href="/" className="w-[50%] md:w-[35%] lg:w-[18%]">
+            <img
+              src="/logo/SDAF black.png"
+              alt="logo_black"
+              className={`w-full translate-y-[.75vw] transition-opacity duration-500
             ${pathname === "/" ? "lg:opacity-0" : "lg:opacity-100"}`}
-        />
-      </a>
+            />
+          </a>
         </div>
         <div className=" w-20 gap-2 flex items-center justify-end h-full ">
           <div className="flex items-center gap-2">

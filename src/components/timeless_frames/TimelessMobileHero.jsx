@@ -18,6 +18,37 @@ const TimelessMobileHero = () => {
         setMuted(!muted)
     }
 
+    useEffect(() => {
+        if (!videoRef.current) return
+
+        const video = videoRef.current
+
+        const trigger = ScrollTrigger.create({
+            trigger: video,
+            start: "top bottom",
+            end: "bottom top",
+            onEnter: () => {
+                video.muted = muted
+            },
+            onEnterBack: () => {
+                video.muted = muted
+            },
+            onLeave: () => {
+                video.muted = true
+                setMuted(true)
+            },
+            onLeaveBack: () => {
+                video.muted = true
+                setMuted(true)
+            }
+        })
+
+        return () => {
+            trigger.kill()
+        }
+    }, [muted])
+
+
     return (
         <div id='hero'>
 
@@ -35,7 +66,7 @@ const TimelessMobileHero = () => {
                 </div>
                 <p className='  text-sm  '>In September 2025, SDAF was proud to present Timeless Frames, a tribute to the pioneering photographer Damodar Kamat. The exhibition was a resounding success, celebrating a son of Maharashtra and unveiling a historic collection of unseen photographs.</p>
             </div>
-            <div className="  lg:hidden  my-12 text-[#020202] px-[4vw] w-full  flex flex-col lg:flex-row lg:gap-20 ">
+            <div className="  lg:hidden  my-14 text-[#020202] px-[4vw] w-full  flex flex-col lg:flex-row lg:gap-20 ">
                 <div className=" w-full aspect-video   ">
                     <h2 className='  hero mb-5  leading-none text-3xl lg:text-5xl'>Event Highlights</h2>
                     <div className="relative aspect-video w-full">

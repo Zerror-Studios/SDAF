@@ -17,13 +17,13 @@ export default function CanvasCreationUnique() {
                 start: "top 70%",
                 // markers: true,
                 toggleActions: 'play none none reverse'
-            }    
+            }
         })
-        tl.from(".grid_img_paren_1",{
-            clipPath:'inset(50%)',
+        tl.from(".grid_img_paren_1", {
+            clipPath: 'inset(50%)',
             opacity: 0,
-            stagger:.2,
-            ease:"expo.out",
+            stagger: .2,
+            ease: "expo.out",
             duration: .8
         })
 
@@ -31,7 +31,7 @@ export default function CanvasCreationUnique() {
     })
 
     return (
-        <div id="canvas_and_creation" className=" max-lg:mt-12 canvas_creation_sec relative w-full overflow-hidden  flex flex-col md:flex-row items-stretch  md:gap-x-10 lg:gap-x-44  px-[4vw] ">
+        <div id="canvas_and_creation" className=" max-lg:mt-14 canvas_creation_sec relative w-full overflow-hidden  flex flex-col md:flex-row items-stretch  md:gap-x-10 lg:gap-x-44  px-[4vw] ">
 
             {/* Canvas Text Block */}
             <div className=" w-full md:w-1/2  flex justify-center flex-col relative">

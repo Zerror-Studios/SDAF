@@ -9,20 +9,80 @@ import { RiVolumeMuteLine, RiVolumeUpLine } from '@remixicon/react';
 const MobileVisionaries = () => {
 
 
-    const videoRefs = useRef([])
-    const [mutedStates, setMutedStates] = useState([true, true, true])
+    const video1Ref = useRef(null)
+    const video2Ref = useRef(null)
+    const video3Ref = useRef(null)
+
+    const [activeVideo, setActiveVideo] = useState(null)
 
     const toggleMute = (index) => {
-        setMutedStates(prev => {
-            const updated = prev.map((_, i) => i !== index)
+        setActiveVideo(prev => prev === index ? null : index)
 
-            videoRefs.current.forEach((video, i) => {
-                if (video) video.muted = i !== index
-            })
+        const videos = [
+            video1Ref.current,
+            video2Ref.current,
+            video3Ref.current
+        ]
 
-            return updated
+        videos.forEach((video, i) => {
+            if (!video) return
+            video.muted = i !== index
         })
     }
+
+    useEffect(() => {
+        const videos = [
+            video1Ref.current,
+            video2Ref.current,
+            video3Ref.current
+        ]
+
+        videos.forEach((video, i) => {
+            if (!video) return
+            video.muted = activeVideo !== i
+        })
+    }, [activeVideo])
+
+
+    useEffect(() => {
+        const videos = [
+            video1Ref.current,
+            video2Ref.current,
+            video3Ref.current
+        ]
+
+        const triggers = videos.map((video, index) => {
+            if (!video) return null
+
+            return ScrollTrigger.create({
+                trigger: video,
+                start: "top bottom",
+                end: "bottom top",
+
+                onEnter: () => {
+                    video.muted = activeVideo !== index
+                },
+
+                onEnterBack: () => {
+                    video.muted = activeVideo !== index
+                },
+
+                onLeave: () => {
+                    video.muted = true
+                    if (activeVideo === index) setActiveVideo(null)
+                },
+
+                onLeaveBack: () => {
+                    video.muted = true
+                    if (activeVideo === index) setActiveVideo(null)
+                }
+            })
+        })
+
+        return () => {
+            triggers.forEach(t => t && t.kill())
+        }
+    }, [activeVideo])
 
     return (
         <div id='vision'>
@@ -32,12 +92,12 @@ const MobileVisionaries = () => {
                 </div>
                 <div className="w-full">
                     <div className=" relative aspect-[3/4]  mt-8 mb-2">
-                        <video ref={el => (videoRefs.current[0] = el)} loop autoPlay playsInline muted className='cover ' src="/videos/spok1.mp4" alt="loading" />
+                        <video ref={video1Ref} loop autoPlay playsInline muted className='cover ' src="/videos/spok1.mp4" alt="loading" />
                         <button
                             onClick={() => toggleMute(0)}
                             className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
                         >
-                            {mutedStates[0] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                            {activeVideo !== 0 ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
                         </button>
                     </div>
                     <p className=' text-base lg:text-xl  '>— Ajay Devgn </p>
@@ -46,12 +106,12 @@ const MobileVisionaries = () => {
                 </div>
                 <div className="w-full">
                     <div className=" relative aspect-[3/4]  mt-10 mb-2">
-                        <video ref={el => (videoRefs.current[1] = el)} loop autoPlay playsInline muted className=' cover ' src="/videos/spok2.mp4" alt="loading" />
+                        <video ref={video2Ref} loop autoPlay playsInline muted className=' cover ' src="/videos/spok2.mp4" alt="loading" />
                         <button
                             onClick={() => toggleMute(1)}
                             className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
                         >
-                            {mutedStates[1] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                            {activeVideo !== 1 ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
                         </button>
                     </div>
                     <p className=' text-base lg:text-base  '>— Mark Manuel</p>
@@ -59,12 +119,12 @@ const MobileVisionaries = () => {
                 </div>
                 <div className="w-full">
                     <div className=" relative aspect-[3/4]  mt-10 mb-2 ">
-                        <video ref={el => (videoRefs.current[2] = el)} loop autoPlay playsInline muted className='cover ' src="/videos/spok3.mp4" alt="loading" />
+                        <video ref={video3Ref} loop autoPlay playsInline muted className='cover ' src="/videos/spok3.mp4" alt="loading" />
                         <button
                             onClick={() => toggleMute(2)}
                             className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
                         >
-                            {mutedStates[2] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                            {activeVideo !== 2 ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
                         </button>
                     </div>
                     <p className=' text-base lg:text-base  '>— Parvez Damania</p>

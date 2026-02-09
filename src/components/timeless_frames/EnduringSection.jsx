@@ -18,6 +18,36 @@ const EnduringSection = () => {
         setMuted(!muted)
     }
 
+    useEffect(() => {
+        if (!videoRef.current) return
+
+        const video = videoRef.current
+
+        const trigger = ScrollTrigger.create({
+            trigger: video,
+            start: "top bottom",
+            end: "bottom top",
+            onEnter: () => {
+                video.muted = muted
+            },
+            onEnterBack: () => {
+                video.muted = muted
+            },
+            onLeave: () => {
+                video.muted = true
+                setMuted(true)
+            },
+            onLeaveBack: () => {
+                video.muted = true
+                setMuted(true)
+            }
+        })
+
+        return () => {
+            trigger.kill()
+        }
+    }, [muted])
+
 
     useGSAP(() => {
 
@@ -123,7 +153,7 @@ const EnduringSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="  enduring_desc  w-full pt-12 md:pt-[10vw] lg:pt-[5vw]   center">
+            <div className="  enduring_desc  w-full pt-14 md:pt-[10vw] lg:pt-[5vw]   center">
                 <div className=" w-full lg:w-[70%]   flex flex-col lg:flex-row items-center justify-between">
                     <div className=" lg:hidden w-full lg:w-1/2 translate-y-[1vw]  text-3xl  md:text-[3.7vw] leading-tight">
                         <h2 className='split_head_1'>Honouring the Unsung Heroes of Indian Culture</h2>
@@ -148,7 +178,7 @@ const EnduringSection = () => {
             </div>
             <div className="w-full hidden lg:flex  center">
 
-                <div className=" mt-12 hidden lg:flex relative aspect-video w-[80%]">
+                <div className=" mt-14 hidden lg:flex relative aspect-video w-[80%]">
                     <video ref={videoRef} loop autoPlay muted playsInline className='cover' src="/videos/hero_video.mp4" alt="Clip Image" />
                     <button
                         onClick={toggleMute}

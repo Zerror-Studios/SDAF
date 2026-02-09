@@ -28,7 +28,7 @@ const Hero = () => {
 
     return (
         <>
-            <div id='hero' className=" homePage_hero_sec  pt-[20vh] lg:pt-[15vw] ">
+            <div id='hero' className=" homePage_hero_sec  pt-[20vh] lg:pt-[14vw] ">
                 <div className=" text-[13vw] md:text-[10vw] px-[4vw] capitalize leading-12 lg:leading-[10vw] font-thin">
                         <h2 className='  uppercase text-[#EB8529] text-xs font-semibold lg:text-xl'>Enduring Legacies</h2>
                     <div className="w-full  pointer-events-none">

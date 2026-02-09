@@ -4,7 +4,7 @@ import { Link } from 'next-view-transitions'
 
 const TimelessFramesHomeSection = () => {
     return (
-        <div id='timeless_frames' className=' px-[4vw] w-full mt-12 lg:mt-20 flex flex-col md:items-center justify-center md:text-center'>
+        <div id='timeless_frames' className=' px-[4vw] w-full mt-14 lg:mt-20 flex flex-col md:items-center justify-center md:text-center'>
             <h2 className='  uppercase text-[#EB8529] text-sm font-semibold lg:text-xl'>Enduring Legacies | Edition 1</h2>
             <h2 className=" text-3xl  lg:text-[4.5vw] leading-none">
                 Timeless frames

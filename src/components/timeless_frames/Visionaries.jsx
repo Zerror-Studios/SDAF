@@ -9,20 +9,82 @@ import { useGSAP } from '@gsap/react';
 
 const Visionaries = () => {
 
-    const videoRefs = useRef([])
-    const [mutedStates, setMutedStates] = useState([true, true, true])
+    const video1Ref = useRef(null)
+    const video2Ref = useRef(null)
+    const video3Ref = useRef(null)
+
+    const [activeVideo, setActiveVideo] = useState(null)
 
     const toggleMute = (index) => {
-        setMutedStates(prev => {
-            const updated = prev.map((_, i) => i !== index)
+        setActiveVideo(prev => prev === index ? null : index)
 
-            videoRefs.current.forEach((video, i) => {
-                if (video) video.muted = i !== index
-            })
+        const videos = [
+            video1Ref.current,
+            video2Ref.current,
+            video3Ref.current
+        ]
 
-            return updated
+        videos.forEach((video, i) => {
+            if (!video) return
+            video.muted = i !== index
         })
     }
+
+    useEffect(() => {
+        const videos = [
+            video1Ref.current,
+            video2Ref.current,
+            video3Ref.current
+        ]
+
+        videos.forEach((video, i) => {
+            if (!video) return
+            video.muted = activeVideo !== i
+        })
+    }, [activeVideo])
+
+
+    useEffect(() => {
+        const videos = [
+            video1Ref.current,
+            video2Ref.current,
+            video3Ref.current
+        ]
+
+        const triggers = videos.map((video, index) => {
+            if (!video) return null
+
+            return ScrollTrigger.create({
+                trigger: video,
+                start: "top bottom",
+                end: "bottom top",
+
+                onEnter: () => {
+                    video.muted = activeVideo !== index
+                },
+
+                onEnterBack: () => {
+                    video.muted = activeVideo !== index
+                },
+
+                onLeave: () => {
+                    video.muted = true
+                    if (activeVideo === index) setActiveVideo(null)
+                },
+
+                onLeaveBack: () => {
+                    video.muted = true
+                    if (activeVideo === index) setActiveVideo(null)
+                }
+            })
+        })
+
+        return () => {
+            triggers.forEach(t => t && t.kill())
+        }
+    }, [activeVideo])
+
+
 
     useGSAP(() => {
 
@@ -77,13 +139,13 @@ const Visionaries = () => {
                 <div className=" vision_imgs  w-full h-full absolute  grid grid-rows-3 lg:grid-rows-none  lg:grid-cols-[30%_40%_30%]">
                     <div className=" vision_img_1 translate-y-[20vw] lg:translate-y-0 translate-x-[-10vw] lg:translate-x-0 origin-center flex flex-col  justify-center items-end w-full gap-2 text-center ">
                         <div className=" relative w-[50%] md:w-[35%]  lg:w-[55%] ">
-                            <video ref={el => (videoRefs.current[0] = el)} loop autoPlay playsInline muted className='aspect-[3/4] object-cover ' src="/videos/spok2.mp4" alt="loading" />
+                            <video ref={video1Ref} loop autoPlay playsInline muted className='aspect-[3/4] object-cover ' src="/videos/spok2.mp4" alt="loading" />
 
                             <button
                                 onClick={() => toggleMute(0)}
                                 className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
                             >
-                                {mutedStates[0] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                                {activeVideo !== 0 ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
                             </button>
                         </div>
                         <div className="w-[50%] md:w-[35%]  lg:w-[55%]">
@@ -95,13 +157,13 @@ const Visionaries = () => {
                     </div>
                     <div className=" vision_img_2 origin-center flex flex-col justify-center  items-center w-full gap-2  text-center ">
                         <div className=" relative w-[85%] md:w-[50%] lg:w-[70%]  ">
-                            <video ref={el => (videoRefs.current[1] = el)} loop autoPlay playsInline muted className=' aspect-[3/4] object-cover object-right ' src="/videos/spok1.mp4" alt="loading" />
+                            <video ref={video2Ref} loop autoPlay playsInline muted className=' aspect-[3/4] object-cover object-right ' src="/videos/spok1.mp4" alt="loading" />
 
                             <button
                                 onClick={() => toggleMute(1)}
                                 className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
                             >
-                                {mutedStates[1] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                                {activeVideo !== 1 ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
                             </button>
                         </div>
                         <div className=" w-[85%] md:w-[50%] lg:w-[70%] ">
@@ -118,9 +180,9 @@ const Visionaries = () => {
                                 onClick={() => toggleMute(2)}
                                 className="absolute bottom-5 right-5 z-10 bg-white backdrop-blur-md p-2 rounded-full"
                             >
-                                {mutedStates[2] ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
+                                {activeVideo !== 2 ? <RiVolumeMuteLine size={16} /> : <RiVolumeUpLine size={16} />}
                             </button>
-                            <video ref={el => (videoRefs.current[2] = el)} loop autoPlay playsInline muted className=' aspect-[3/4] object-cover  ' src="/videos/spok3.mp4" alt="loading" />
+                            <video ref={video3Ref} loop autoPlay playsInline muted className=' aspect-[3/4] object-cover  ' src="/videos/spok3.mp4" alt="loading" />
                         </div>
                         <div className="w-[50%] md:w-[35%]  lg:w-[55%]">
                             {/* <p className='w-full text-left text-xs lg:text-sm  leading-none'>“Archives aren’t nostalgia—they’re raw material for new imagination.”</p> */}

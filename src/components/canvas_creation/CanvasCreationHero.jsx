@@ -23,9 +23,9 @@ const CanvasCreationHero = () => {
                 </div>
             </div>
 
-            <div className=" px-[4vw] w-full my-12 lg:my-44 lg:flex flex-col items-center lg:text-center">
-                 <h2 className=" text-3xl lg:text-5xl lg:w-1/2  leading-none">
-                   What happens when you give artists exactly what they need?
+            <div className=" px-[4vw] w-full my-14 lg:my-44 lg:flex flex-col items-center lg:text-center">
+                <h2 className=" text-3xl lg:text-5xl lg:w-1/2  leading-none">
+                    What happens when you give artists exactly what they need?
                 </h2>
                 <p className=" mt-5 my-2 lg:my-6 lg:mt-10 lg:w-1/2   text-sm lg:text-lg  opacity-80 ">
                     Most working artists rarely get uninterrupted time to create. Between commissions, teaching, and daily life, the space for pure exploration shrinks.
