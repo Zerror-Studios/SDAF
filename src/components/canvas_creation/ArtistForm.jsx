@@ -82,7 +82,7 @@ const ArtistForm = () => {
       <ToastContainer />
 
 
-      <div className="  w-full p-5  lg:w-[60%] md:w-[92%] lg:p-20 text-center space-y-12 text-[#020202] bg-[#fff]">
+      <div className="  w-full p-5  lg:w-[60%] md:w-[92%] lg:p-20 text-center space-y-12 text-[#020202] border bg-[#ECE7D9]">
         <h2 className="text-3xl lg:text-5xl capitalize">
           Fill the form below to participate
         </h2>
