@@ -4,6 +4,7 @@ import ArtistNamesSection from '@/components/canvas_creation/ArtistNamesSection'
 import VenueSection from '@/components/canvas_creation/VenueSection'
 import WebPageSchema from '@/components/seo/WebPageSchema'
 import { Const } from '@/utils/Constants'
+import ArtistForm from '@/components/canvas_creation/ArtistForm'
 
 
 export const metadata = {
@@ -57,6 +58,7 @@ const CanvasAndCreationPage = () => {
       />
       <CanvasCreationHero />
       <ArtistNamesSection />
+      <ArtistForm/>
       <VenueSection />
     </>
   )

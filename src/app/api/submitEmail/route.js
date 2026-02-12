@@ -55,7 +55,7 @@ export async function POST(req) {
     // ✅ Get existing rows
     const getRows = await sheets.spreadsheets.values.get({
       spreadsheetId,
-      range: "Sheet1!A:G",
+      range: "Contact Form!A:G",
     })
 
     const rows = getRows.data.values || []
