@@ -65,9 +65,9 @@ const ContactForm = () => {
 
 
     return (
-        <div id='contact'>
+        <div id='contact' className='h-fit bg-white'>
             <ToastContainer />
-            <div className="w-full items-stretch mt-14 lg:mt-20 bg_img flex flex-col  lg:flex-row  ">
+            <div className="w-full items-stretch mt-14 pt-10 lg:mt-20  flex flex-col  lg:flex-row  ">
                 <div className=" w-full lg:w-1/2 h-full px-[4vw]">
                     <div className="">
                         <h2 className=' text-3xl  lg:text-[4.5vw] leading-none'>Stay Connected</h2>
@@ -232,7 +232,7 @@ const ContactForm = () => {
                     </div> */}
                 </div>
             </div>
-            <div className="w-full h-10 px-[4vw] my-5 border-t border-black/50 flex items-center lg:justify-end ">
+            <div className="w-full h-14 mt-5 px-[4vw]  border-t border-black/50 flex items-center lg:justify-end ">
                 <p className='text-sm text-black'>© {new Date().getFullYear()} SDAF. All rights reserved.</p>
             </div>
         </div>

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import MainBtn from "../buttons/MainBtn";
 import { ToastContainer, toast } from "react-toastify";
+import { RiLink, RiLinksLine } from "@remixicon/react";
 
 const ArtistForm = () => {
   const [formData, setFormData] = useState({
@@ -37,8 +38,7 @@ const ArtistForm = () => {
       !firstName ||
       !lastName ||
       !email ||
-      !contact ||
-      !socialLinks
+      !contact
     ) {
       toast.error("Please fill all required fields.");
       setLoading(false);
@@ -78,18 +78,18 @@ const ArtistForm = () => {
   };
 
   return (
-    <div className="w-full pt-20 px-[4vw]">
+    <div className="w-full pt-10 center ">
       <ToastContainer />
 
-      <h2 className="text-3xl lg:text-5xl capitalize">
-        Fill the form below to participate
-      </h2>
 
-      <div className="flex flex-col lg:flex-row w-full mt-10 gap-12">
-        {/* Form Section */}
+      <div className="  w-full p-5  lg:w-[60%] md:w-[92%] lg:p-20 text-center space-y-12 text-[#020202] bg-[#fff]">
+        <h2 className="text-3xl lg:text-5xl capitalize">
+          Fill the form below to participate
+        </h2>
+
         <form
           onSubmit={handleSubmit}
-          className="text-start space-y-10 lg:space-y-14 w-full lg:w-1/2 grid gap-x-10 grid-cols-1 md:grid-cols-2"
+          className="text-start space-y-10 lg:space-y-14 w-full grid gap-x-10 grid-cols-1 md:grid-cols-2"
         >
           {/* First Name */}
           <div className="relative">
@@ -162,45 +162,49 @@ const ArtistForm = () => {
               className="border-b w-full text-base lg:text-lg outline-none"
             />
             <span className="absolute right-0 top-1/2 -translate-y-1/2 text-[#EB8529] text-2xl">
-              *
+              <RiLink size={20} />
             </span>
           </div>
 
           {/* Portfolio Link */}
           <div className="col-span-1 md:col-span-2 relative">
-            <input
-              type="url"
-              name="portfolioLink"
-              placeholder="Link to your portfolio (public access enabled)"
-              value={formData.portfolioLink}
-              onChange={handleChange}
-              className="border-b w-full text-base lg:text-lg outline-none"
-            />
+            <div className="relative">
 
-            <div className="mt-3 text-sm ">
-              <p>• The link must be accessible for public viewing.</p>
-              <p>
-                • Accepted platforms include Google Drive, OneDrive, Dropbox,
-                or similar services.
-              </p>
+              <input
+                type="url"
+                name="portfolioLink"
+                placeholder="Link to your portfolio"
+                value={formData.portfolioLink}
+                onChange={handleChange}
+                className="border-b w-full text-base lg:text-lg outline-none"
+              />
+              <span className="absolute right-0 top-1/2 -translate-y-1/2 text-[#EB8529] text-2xl">
+                <RiLink size={20} />
+              </span>
+            </div>
+            <div className="mt-3 pl-3.5  lg:w-[90%] text-sm">
+              <ul className="list-disc  space-y-1">
+                <li>
+                  Add all your works in a single folder on Google Drive, OneDrive, Dropbox, or any similar platform and share the folder link.
+                </li>
+                <li>
+                  Make sure the folder link is set to public so anyone can view it.
+                </li>
+                <li>
+                  If you have multiple social media handles, you can include their links inside the same folder.
+                </li>
+              </ul>
             </div>
           </div>
 
           {/* Submit Button */}
-          <div className="col-span-1 md:col-span-2">
+          <div className=" w-full center col-span-1 md:col-span-2">
             <MainBtn txt={loading ? "Submitting..." : "Submit"} />
           </div>
         </form>
-
-        {/* Image Section */}
-        <div className="w-full lg:w-1/2 flex items-center justify-end">
-          <img
-            className="lg:w-[85%]"
-            src="/images/canvas_and_creation/artist_form_img.avif"
-            alt="Artist Form"
-          />
-        </div>
       </div>
+
+
     </div>
   );
 };
